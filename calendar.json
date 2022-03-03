@@ -1,0 +1,2582 @@
+[
+  {
+    "id": 15375164,
+    "title": "4 To The Floor",
+    "text": "wildbill",
+    "start": "2022-02-18T20:00:00-0500",
+    "end": "2022-02-18T22:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15375164/4-To-The-Floor",
+    "editUrl": "/m/playlist/edit/15375164",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15375164",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15375723,
+    "title": "Mythic Beat",
+    "text": "mythos",
+    "start": "2022-02-18T22:00:00-0500",
+    "end": "2022-02-19T00:00:00-0500",
+    "className": "spin-cal-pl playlist-duplicate automated category-music",
+    "url": "/WXOX/pl/15375723/Mythic-Beat",
+    "editUrl": "/m/playlist/edit/15375723",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15375723",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15375813,
+    "title": "Mythic Beat",
+    "text": "mythos",
+    "start": "2022-02-18T22:00:00-0500",
+    "end": "2022-02-19T00:00:00-0500",
+    "className": "spin-cal-pl playlist-duplicate category-music",
+    "url": "/WXOX/pl/15375813/Mythic-Beat",
+    "editUrl": "/m/playlist/edit/15375813",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15375813",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15376479,
+    "title": "The Electrostatic Test",
+    "text": "Jakey T. Jackson",
+    "start": "2022-02-19T00:00:00-0500",
+    "end": "2022-02-19T02:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15376479/The-Electrostatic-Test",
+    "editUrl": "/m/playlist/edit/15376479",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15376479",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15377141,
+    "title": "Frozen Warnings",
+    "text": "",
+    "start": "2022-02-19T02:00:00-0500",
+    "end": "2022-02-19T04:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15377141/Frozen-Warnings",
+    "editUrl": "/m/playlist/edit/15377141",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15377141",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15377634,
+    "title": "The Raft of The Medusa",
+    "text": "",
+    "start": "2022-02-19T04:00:00-0500",
+    "end": "2022-02-19T07:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15377634/The-Raft-of-The-Medusa",
+    "editUrl": "/m/playlist/edit/15377634",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15377634",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15378419,
+    "title": "All That Jazz",
+    "text": "Juan Leone",
+    "start": "2022-02-19T07:00:00-0500",
+    "end": "2022-02-19T09:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15378419/All-That-Jazz",
+    "editUrl": "/m/playlist/edit/15378419",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15378419",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15379281,
+    "title": "Winterlude",
+    "text": "",
+    "start": "2022-02-19T09:00:00-0500",
+    "end": "2022-02-19T10:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15379281/Winterlude",
+    "editUrl": "/m/playlist/edit/15379281",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15379281",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15379517,
+    "title": "Film Fatale",
+    "text": "Film Fatale",
+    "start": "2022-02-19T10:00:00-0500",
+    "end": "2022-02-19T11:00:00-0500",
+    "className": "spin-cal-pl automated category-talk",
+    "url": "/WXOX/pl/15379517/Film-Fatale",
+    "editUrl": "/m/playlist/edit/15379517",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15379517",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    }
+  },
+  {
+    "id": 15379866,
+    "title": "Trance-Formational Listening",
+    "text": "",
+    "start": "2022-02-19T11:00:00-0500",
+    "end": "2022-02-19T12:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15379866/Trance-Formational-Listening",
+    "editUrl": "/m/playlist/edit/15379866",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15379866",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15380030,
+    "title": "Transworld Airwaves",
+    "text": "",
+    "start": "2022-02-19T12:00:00-0500",
+    "end": "2022-02-19T13:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15380030/Transworld-Airwaves",
+    "editUrl": "/m/playlist/edit/15380030",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15380030",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15380328,
+    "title": "Sun Revolutions",
+    "text": "DJ CLAWDADA",
+    "start": "2022-02-19T13:00:00-0500",
+    "end": "2022-02-19T15:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15380328/Sun-Revolutions",
+    "editUrl": "/m/playlist/edit/15380328",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15380328",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15380982,
+    "title": "BEACHTIME: Sun, Surf, Sails, and Sand",
+    "text": "DJ CLAWDADA",
+    "start": "2022-02-19T15:00:00-0500",
+    "end": "2022-02-19T16:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15380982/BEACHTIME-Sun-Surf-Sails-and-Sand",
+    "editUrl": "/m/playlist/edit/15380982",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15380982",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15381303,
+    "title": "Cat Casual’s Red River Rally",
+    "text": "Cat Casual",
+    "start": "2022-02-19T16:00:00-0500",
+    "end": "2022-02-19T18:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15381303/Cat-Casual-s-Red-River-Rally",
+    "editUrl": "/m/playlist/edit/15381303",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15381303",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15382235,
+    "title": "Rough Draft",
+    "text": "Aron Conaway",
+    "start": "2022-02-19T18:00:00-0500",
+    "end": "2022-02-19T20:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15382235/Rough-Draft",
+    "editUrl": "/m/playlist/edit/15382235",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15382235",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15382823,
+    "title": "Wayward Distraction",
+    "text": "Mark Wallis",
+    "start": "2022-02-19T20:00:00-0500",
+    "end": "2022-02-19T22:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15382823/Wayward-Distraction",
+    "editUrl": "/m/playlist/edit/15382823",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15382823",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15383520,
+    "title": "It's Always Something",
+    "text": "DJ Selby",
+    "start": "2022-02-19T22:00:00-0500",
+    "end": "2022-02-20T03:00:00-0500",
+    "className": "spin-cal-pl category-experimental",
+    "url": "/WXOX/pl/15383520/It-s-Always-Something",
+    "editUrl": "/m/playlist/edit/15383520",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15383520",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15385341,
+    "title": "Suite Sistine Radio",
+    "text": "",
+    "start": "2022-02-20T03:00:00-0500",
+    "end": "2022-02-20T07:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15385341/Suite-Sistine-Radio",
+    "editUrl": "/m/playlist/edit/15385341",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15385341",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15386435,
+    "title": "Deus Ex Machina",
+    "text": "",
+    "start": "2022-02-20T07:00:00-0500",
+    "end": "2022-02-20T09:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15386435/Deus-Ex-Machina",
+    "editUrl": "/m/playlist/edit/15386435",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15386435",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15386808,
+    "title": "Blues Highway BH313",
+    "text": "Mike Suttles",
+    "start": "2022-02-20T09:00:00-0500",
+    "end": "2022-02-20T11:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15386808/Blues-Highway-BH313",
+    "editUrl": "/m/playlist/edit/15386808",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15386808",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15387522,
+    "title": "Ear To Ear",
+    "text": "Gregory Acker",
+    "start": "2022-02-20T11:00:00-0500",
+    "end": "2022-02-20T12:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15387522/Ear-To-Ear",
+    "editUrl": "/m/playlist/edit/15387522",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15387522",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15387782,
+    "title": "Chiaroscuria",
+    "text": "Anaïs Spin",
+    "start": "2022-02-20T12:00:00-0500",
+    "end": "2022-02-20T13:00:00-0500",
+    "className": "spin-cal-pl category-experimental",
+    "url": "/WXOX/pl/15387782/Chiaroscuria",
+    "editUrl": "/m/playlist/edit/15387782",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15387782",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15388353,
+    "title": "L.A.M. Radio Hour",
+    "text": "",
+    "start": "2022-02-20T13:00:00-0500",
+    "end": "2022-02-20T14:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15388353/L-A-M-Radio-Hour",
+    "editUrl": "/m/playlist/edit/15388353",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15388353",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15388445,
+    "title": "That Driving Beat",
+    "text": "Rapid Mod",
+    "start": "2022-02-20T17:00:00-0500",
+    "end": "2022-02-20T20:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15388445/That-Driving-Beat",
+    "editUrl": "/m/playlist/edit/15388445",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15388445",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15388623,
+    "title": "Flanger Magazine",
+    "text": "Ben Zoeller",
+    "start": "2022-02-20T14:00:00-0500",
+    "end": "2022-02-20T16:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15388623/Flanger-Magazine",
+    "editUrl": "/m/playlist/edit/15388623",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15388623",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15389205,
+    "title": "Right On Radio",
+    "text": "Josh",
+    "start": "2022-02-20T16:00:00-0500",
+    "end": "2022-02-20T17:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15389205/Right-On-Radio",
+    "editUrl": "/m/playlist/edit/15389205",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15389205",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15390638,
+    "title": "Bases Loaded Radio",
+    "text": "Antonio Carlos Echevarría",
+    "start": "2022-02-20T20:00:00-0500",
+    "end": "2022-02-21T00:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15390638/Bases-Loaded-Radio",
+    "editUrl": "/m/playlist/edit/15390638",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15390638",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15392196,
+    "title": "The Gold Room",
+    "text": "Jakey T. Jackson",
+    "start": "2022-02-21T00:00:00-0500",
+    "end": "2022-02-21T02:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15392196/The-Gold-Room",
+    "editUrl": "/m/playlist/edit/15392196",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15392196",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15392924,
+    "title": "Cinema Olympia",
+    "text": "",
+    "start": "2022-02-21T02:00:00-0500",
+    "end": "2022-02-21T04:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15392924/Cinema-Olympia",
+    "editUrl": "/m/playlist/edit/15392924",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15392924",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15393464,
+    "title": "Glow Up Radio",
+    "text": "",
+    "start": "2022-02-21T04:00:00-0500",
+    "end": "2022-02-21T07:00:00-0500",
+    "className": "spin-cal-pl automated category-unset",
+    "url": "/WXOX/pl/15393464/Glow-Up-Radio",
+    "editUrl": "/m/playlist/edit/15393464",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15393464",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    }
+  },
+  {
+    "id": 15394341,
+    "title": "World Workout w/ The Dream Team",
+    "text": "",
+    "start": "2022-02-21T07:00:00-0500",
+    "end": "2022-02-21T08:00:00-0500",
+    "className": "spin-cal-pl automated category-talk",
+    "url": "/WXOX/pl/15394341/World-Workout-w-The-Dream-Team",
+    "editUrl": "/m/playlist/edit/15394341",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15394341",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    }
+  },
+  {
+    "id": 15394749,
+    "title": "Democracy Now!",
+    "text": "Amy Goodman",
+    "start": "2022-02-21T08:00:00-0500",
+    "end": "2022-02-21T09:00:00-0500",
+    "className": "spin-cal-pl automated category-talk",
+    "url": "/WXOX/pl/15394749/Democracy-Now",
+    "editUrl": "/m/playlist/edit/15394749",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15394749",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    }
+  },
+  {
+    "id": 15394976,
+    "title": "Love Always",
+    "text": "DJ Always",
+    "start": "2022-02-21T09:00:00-0500",
+    "end": "2022-02-21T10:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15394976/Love-Always",
+    "editUrl": "/m/playlist/edit/15394976",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15394976",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15395453,
+    "title": "Muddle Instead of Music",
+    "text": "Matt Ertz",
+    "start": "2022-02-21T10:00:00-0500",
+    "end": "2022-02-21T12:00:00-0500",
+    "className": "spin-cal-pl automated category-experimental",
+    "url": "/WXOX/pl/15395453/Muddle-Instead-of-Music",
+    "editUrl": "/m/playlist/edit/15395453",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15395453",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 15396116,
+    "title": "Hello Goodbye",
+    "text": "Kimberly Sometimes",
+    "start": "2022-02-21T12:00:00-0500",
+    "end": "2022-02-21T13:00:00-0500",
+    "className": "spin-cal-pl category-music",
+    "url": "/WXOX/pl/15396116/Hello-Goodbye",
+    "editUrl": "/m/playlist/edit/15396116",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15396116",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15396603,
+    "title": "At The Helm",
+    "text": "Ben Helm",
+    "start": "2022-02-21T13:00:00-0500",
+    "end": "2022-02-21T14:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15396603/At-The-Helm",
+    "editUrl": "/m/playlist/edit/15396603",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15396603",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15397074,
+    "title": "From the Vault: Pacifica Archives",
+    "text": "",
+    "start": "2022-02-21T14:00:00-0500",
+    "end": "2022-02-21T15:00:00-0500",
+    "className": "spin-cal-pl automated category-talk",
+    "url": "/WXOX/pl/15397074/From-the-Vault-Pacifica-Archives",
+    "editUrl": "/m/playlist/edit/15397074",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15397074",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    }
+  },
+  {
+    "id": 15397389,
+    "title": "Z Radio",
+    "text": "",
+    "start": "2022-02-21T15:00:00-0500",
+    "end": "2022-02-21T16:00:00-0500",
+    "className": "spin-cal-pl automated category-talk",
+    "url": "/WXOX/pl/15397389/Z-Radio",
+    "editUrl": "/m/playlist/edit/15397389",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15397389",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    }
+  },
+  {
+    "id": 15397776,
+    "title": "Wild Dreams Radio",
+    "text": "Ethan Buckler",
+    "start": "2022-02-21T16:00:00-0500",
+    "end": "2022-02-21T18:00:00-0500",
+    "className": "spin-cal-pl automated category-music",
+    "url": "/WXOX/pl/15397776/Wild-Dreams-Radio",
+    "editUrl": "/m/playlist/edit/15397776",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15397776",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    }
+  },
+  {
+    "id": 15398435,
+    "title": "driftless afternoon turmoil",
+    "text": "Brian Manley",
+    "start": "2022-02-21T18:00:00-0500",
+    "end": "2022-02-21T20:00:00-0500",
+    "className": "spin-cal-pl category-experimental event-current",
+    "url": "/WXOX/pl/15398435/driftless-afternoon-turmoil",
+    "editUrl": "/m/playlist/edit/15398435",
+    "deleteUrl": null,
+    "rebroadcastUrl": "/m/playlist/create?playlist_id=15398435",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    }
+  },
+  {
+    "id": 135078,
+    "scheduleId": 141279,
+    "title": "Air Force One",
+    "text": "DJ Jet Pilot",
+    "start": "2022-02-25T00:00:00-0500",
+    "end": "2022-02-25T02:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135078/Air-Force-One",
+    "editUrl": "/m/show/edit/135078",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135078&start=2022-02-25T00%3A00%3A00-0500"
+  },
+  {
+    "id": 135090,
+    "scheduleId": 141291,
+    "title": "PARTY PANTS",
+    "text": "Jaxon Lee Swain",
+    "start": "2022-02-23T22:00:00-0500",
+    "end": "2022-02-24T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135090/PARTY-PANTS",
+    "editUrl": "/m/show/edit/135090",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135090&start=2022-02-23T22%3A00%3A00-0500"
+  },
+  {
+    "id": 135096,
+    "scheduleId": 141297,
+    "title": "The Diva Hour",
+    "text": "Carly Johnson",
+    "start": "2022-02-25T13:00:00-0500",
+    "end": "2022-02-25T14:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135096/The-Diva-Hour",
+    "editUrl": "/m/show/edit/135096",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135096&start=2022-02-25T13%3A00%3A00-0500"
+  },
+  {
+    "id": 135114,
+    "scheduleId": 141315,
+    "title": "Night Train Cocktail Lounge",
+    "text": "Brian Manley",
+    "start": "2022-02-21T20:00:00-0500",
+    "end": "2022-02-21T21:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135114/Night-Train-Cocktail-Lounge",
+    "editUrl": "/m/show/edit/135114",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135114&start=2022-02-21T20%3A00%3A00-0500"
+  },
+  {
+    "id": 135123,
+    "scheduleId": 141324,
+    "title": "Cutting Edges",
+    "text": "Shawn Patrick Hennessey",
+    "start": "2022-02-21T21:00:00-0500",
+    "end": "2022-02-21T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135123/Cutting-Edges",
+    "editUrl": "/m/show/edit/135123",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135123&start=2022-02-21T21%3A00%3A00-0500"
+  },
+  {
+    "id": 135138,
+    "scheduleId": 141339,
+    "title": "Mythic Beat",
+    "text": "mythos",
+    "start": "2022-02-25T22:00:00-0500",
+    "end": "2022-02-26T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135138/Mythic-Beat",
+    "editUrl": "/m/show/edit/135138",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135138&start=2022-02-25T22%3A00%3A00-0500"
+  },
+  {
+    "id": 135144,
+    "scheduleId": 141345,
+    "title": "Wayward Distraction",
+    "text": "Mark Wallis",
+    "start": "2022-02-26T20:00:00-0500",
+    "end": "2022-02-26T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135144/Wayward-Distraction",
+    "editUrl": "/m/show/edit/135144",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135144&start=2022-02-26T20%3A00%3A00-0500"
+  },
+  {
+    "id": 135165,
+    "scheduleId": 141366,
+    "title": "Blues Highway",
+    "text": "Mike Suttles",
+    "start": "2022-02-27T09:00:00-0500",
+    "end": "2022-02-27T11:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135165/Blues-Highway",
+    "editUrl": "/m/show/edit/135165",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135165&start=2022-02-27T09%3A00%3A00-0500"
+  },
+  {
+    "id": 135168,
+    "scheduleId": 141369,
+    "title": "Inside A Question",
+    "text": "Darrick Wood",
+    "start": "2022-02-27T17:00:00-0500",
+    "end": "2022-02-27T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135168/Inside-A-Question",
+    "editUrl": "/m/show/edit/135168",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135168&start=2022-02-27T17%3A00%3A00-0500"
+  },
+  {
+    "id": 135171,
+    "scheduleId": 141372,
+    "title": "Flanger Magazine",
+    "text": "Ben Zoeller",
+    "start": "2022-02-27T14:00:00-0500",
+    "end": "2022-02-27T16:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135171/Flanger-Magazine",
+    "editUrl": "/m/show/edit/135171",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135171&start=2022-02-27T14%3A00%3A00-0500"
+  },
+  {
+    "id": 135174,
+    "scheduleId": 141375,
+    "title": "PARALLEL UNIVERSE",
+    "text": "KARA",
+    "start": "2022-02-23T00:00:00-0500",
+    "end": "2022-02-23T02:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135174/PARALLEL-UNIVERSE",
+    "editUrl": "/m/show/edit/135174",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135174&start=2022-02-23T00%3A00%3A00-0500"
+  },
+  {
+    "id": 135186,
+    "scheduleId": 141387,
+    "title": "Film Fatale",
+    "text": "Film Fatale",
+    "start": "2022-02-26T10:00:00-0500",
+    "end": "2022-02-26T11:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135186/Film-Fatale",
+    "editUrl": "/m/show/edit/135186",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135186&start=2022-02-26T10%3A00%3A00-0500"
+  },
+  {
+    "id": 135192,
+    "scheduleId": 141393,
+    "title": "ROCK SEXY",
+    "text": "Blythe of the Ball",
+    "start": "2022-02-24T22:00:00-0500",
+    "end": "2022-02-25T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135192/ROCK-SEXY",
+    "editUrl": "/m/show/edit/135192",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135192&start=2022-02-24T22%3A00%3A00-0500"
+  },
+  {
+    "id": 135198,
+    "scheduleId": 141399,
+    "title": "It's Always Something",
+    "text": "DJ Selby",
+    "start": "2022-02-26T22:00:00-0500",
+    "end": "2022-02-27T03:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135198/It-s-Always-Something",
+    "editUrl": "/m/show/edit/135198",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135198&start=2022-02-26T22%3A00%3A00-0500"
+  },
+  {
+    "id": 135204,
+    "scheduleId": 141405,
+    "title": "Oh Man Yes!",
+    "text": "Julie Gross",
+    "start": "2022-02-22T18:00:00-0500",
+    "end": "2022-02-22T19:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135204/Oh-Man-Yes",
+    "editUrl": "/m/show/edit/135204",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135204&start=2022-02-22T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135207,
+    "scheduleId": 141408,
+    "title": "The Deep End",
+    "text": "",
+    "start": "2022-02-23T20:00:00-0500",
+    "end": "2022-02-23T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135207/The-Deep-End",
+    "editUrl": "/m/show/edit/135207",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135207&start=2022-02-23T20%3A00%3A00-0500"
+  },
+  {
+    "id": 135213,
+    "scheduleId": 141414,
+    "title": "A Little Bit Country, A Little Bit Country Club",
+    "text": "Willie MacLean",
+    "start": "2022-02-22T09:00:00-0500",
+    "end": "2022-02-22T11:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135213/A-Little-Bit-Country-A-Little-Bit-Country-Club",
+    "editUrl": "/m/show/edit/135213",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135213&start=2022-02-22T09%3A00%3A00-0500"
+  },
+  {
+    "id": 135222,
+    "scheduleId": 235310,
+    "title": "Sir Basil Outernational",
+    "text": "Sir Basil Outernational",
+    "start": "2022-02-24T11:00:00-0500",
+    "end": "2022-02-24T13:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135222/Sir-Basil-Outernational",
+    "editUrl": "/m/show/edit/135222",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135222&start=2022-02-24T11%3A00%3A00-0500"
+  },
+  {
+    "id": 135228,
+    "scheduleId": 141429,
+    "title": "The Wayfarer Way",
+    "text": "Ethan AD, Col. Crates",
+    "start": "2022-02-25T17:00:00-0500",
+    "end": "2022-02-25T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135228/The-Wayfarer-Way",
+    "editUrl": "/m/show/edit/135228",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135228&start=2022-02-25T17%3A00%3A00-0500"
+  },
+  {
+    "id": 135243,
+    "scheduleId": 141444,
+    "title": "Rough Draft",
+    "text": "Aron Conaway",
+    "start": "2022-02-26T18:00:00-0500",
+    "end": "2022-02-26T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135243/Rough-Draft",
+    "editUrl": "/m/show/edit/135243",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135243&start=2022-02-26T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135255,
+    "scheduleId": 141456,
+    "title": "Lady Jam's Juice Box",
+    "text": "Lady Jam",
+    "start": "2022-02-25T15:00:00-0500",
+    "end": "2022-02-25T17:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135255/Lady-Jam-s-Juice-Box",
+    "editUrl": "/m/show/edit/135255",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135255&start=2022-02-25T15%3A00%3A00-0500"
+  },
+  {
+    "id": 135273,
+    "scheduleId": 141474,
+    "title": "Midnight Locker",
+    "text": "Shutaro Noguchi",
+    "start": "2022-02-21T23:00:00-0500",
+    "end": "2022-02-22T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135273/Midnight-Locker",
+    "editUrl": "/m/show/edit/135273",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135273&start=2022-02-21T23%3A00%3A00-0500"
+  },
+  {
+    "id": 135297,
+    "scheduleId": 141498,
+    "title": "Acentos",
+    "text": "Acentos",
+    "start": "2022-02-23T11:00:00-0500",
+    "end": "2022-02-23T14:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135297/Acentos",
+    "editUrl": "/m/show/edit/135297",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135297&start=2022-02-23T11%3A00%3A00-0500"
+  },
+  {
+    "id": 135300,
+    "scheduleId": 141501,
+    "title": "Fly Closer to the Sun",
+    "text": "Tim Barnes",
+    "start": "2022-02-21T22:00:00-0500",
+    "end": "2022-02-21T23:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135300/Fly-Closer-to-the-Sun",
+    "editUrl": "/m/show/edit/135300",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135300&start=2022-02-21T22%3A00%3A00-0500"
+  },
+  {
+    "id": 135330,
+    "scheduleId": 141531,
+    "title": "Freak and Swing and Rock and Roll",
+    "text": "Don Dean",
+    "start": "2022-02-25T18:00:00-0500",
+    "end": "2022-02-25T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135330/Freak-and-Swing-and-Rock-and-Roll",
+    "editUrl": "/m/show/edit/135330",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135330&start=2022-02-25T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135333,
+    "scheduleId": 141534,
+    "title": "The Gold Room",
+    "text": "Jakey T. Jackson",
+    "start": "2022-02-28T00:00:00-0500",
+    "end": "2022-02-28T02:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135333/The-Gold-Room",
+    "editUrl": "/m/show/edit/135333",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135333&start=2022-02-28T00%3A00%3A00-0500"
+  },
+  {
+    "id": 135339,
+    "scheduleId": 141540,
+    "title": "Democracy Now!",
+    "text": "Amy Goodman",
+    "start": "2022-02-22T08:00:00-0500",
+    "end": "2022-02-22T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135339/Democracy-Now",
+    "editUrl": "/m/show/edit/135339",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135339&start=2022-02-22T08%3A00%3A00-0500"
+  },
+  {
+    "id": 135339,
+    "scheduleId": 141540,
+    "title": "Democracy Now!",
+    "text": "Amy Goodman",
+    "start": "2022-02-23T08:00:00-0500",
+    "end": "2022-02-23T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135339/Democracy-Now",
+    "editUrl": "/m/show/edit/135339",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135339&start=2022-02-23T08%3A00%3A00-0500"
+  },
+  {
+    "id": 135339,
+    "scheduleId": 141540,
+    "title": "Democracy Now!",
+    "text": "Amy Goodman",
+    "start": "2022-02-24T08:00:00-0500",
+    "end": "2022-02-24T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135339/Democracy-Now",
+    "editUrl": "/m/show/edit/135339",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135339&start=2022-02-24T08%3A00%3A00-0500"
+  },
+  {
+    "id": 135339,
+    "scheduleId": 141540,
+    "title": "Democracy Now!",
+    "text": "Amy Goodman",
+    "start": "2022-02-25T08:00:00-0500",
+    "end": "2022-02-25T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135339/Democracy-Now",
+    "editUrl": "/m/show/edit/135339",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135339&start=2022-02-25T08%3A00%3A00-0500"
+  },
+  {
+    "id": 135342,
+    "scheduleId": 141543,
+    "title": "The Vibe",
+    "text": "Evan Wilson",
+    "start": "2022-02-23T17:00:00-0500",
+    "end": "2022-02-23T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135342/The-Vibe",
+    "editUrl": "/m/show/edit/135342",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135342&start=2022-02-23T17%3A00%3A00-0500"
+  },
+  {
+    "id": 135345,
+    "scheduleId": 141546,
+    "title": "Deep Shelves",
+    "text": "joee conroy",
+    "start": "2022-02-27T11:00:00-0500",
+    "end": "2022-02-27T12:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135345/Deep-Shelves",
+    "editUrl": "/m/show/edit/135345",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135345&start=2022-02-27T11%3A00%3A00-0500"
+  },
+  {
+    "id": 135351,
+    "scheduleId": 271754,
+    "title": "Power Trash",
+    "text": "Shawn",
+    "start": "2022-02-23T18:00:00-0500",
+    "end": "2022-02-23T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135351/Power-Trash",
+    "editUrl": "/m/show/edit/135351",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135351&start=2022-02-23T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135366,
+    "scheduleId": 141567,
+    "title": "Hundred Proof Fountain",
+    "text": "Madame Green Eyes, Captain Scratch",
+    "start": "2022-02-24T16:00:00-0500",
+    "end": "2022-02-24T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135366/Hundred-Proof-Fountain",
+    "editUrl": "/m/show/edit/135366",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135366&start=2022-02-24T16%3A00%3A00-0500"
+  },
+  {
+    "id": 135369,
+    "scheduleId": 141570,
+    "title": "4 To The Floor",
+    "text": "wildbill",
+    "start": "2022-02-25T20:00:00-0500",
+    "end": "2022-02-25T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135369/4-To-The-Floor",
+    "editUrl": "/m/show/edit/135369",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135369&start=2022-02-25T20%3A00%3A00-0500"
+  },
+  {
+    "id": 135372,
+    "scheduleId": 141573,
+    "title": "The Exploded View",
+    "text": "Creighton Beryl",
+    "start": "2022-02-23T14:00:00-0500",
+    "end": "2022-02-23T17:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135372/The-Exploded-View",
+    "editUrl": "/m/show/edit/135372",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135372&start=2022-02-23T14%3A00%3A00-0500"
+  },
+  {
+    "id": 135384,
+    "scheduleId": 141585,
+    "title": "Morning Rounds",
+    "text": "Sundroptom",
+    "start": "2022-02-23T09:00:00-0500",
+    "end": "2022-02-23T11:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135384/Morning-Rounds",
+    "editUrl": "/m/show/edit/135384",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135384&start=2022-02-23T09%3A00%3A00-0500"
+  },
+  {
+    "id": 135390,
+    "scheduleId": 141591,
+    "title": "Humble Offerings",
+    "text": "Elijah Humble",
+    "start": "2022-02-24T21:00:00-0500",
+    "end": "2022-02-24T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135390/Humble-Offerings",
+    "editUrl": "/m/show/edit/135390",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135390&start=2022-02-24T21%3A00%3A00-0500"
+  },
+  {
+    "id": 135405,
+    "scheduleId": 141606,
+    "title": "That Driving Beat",
+    "text": "James Inge, Rapid Mod",
+    "start": "2022-02-27T18:00:00-0500",
+    "end": "2022-02-27T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135405/That-Driving-Beat",
+    "editUrl": "/m/show/edit/135405",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135405&start=2022-02-27T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135411,
+    "scheduleId": 141612,
+    "title": "Stellar Spectrograph",
+    "text": "John Whitney",
+    "start": "2022-02-24T18:00:00-0500",
+    "end": "2022-02-24T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135411/Stellar-Spectrograph",
+    "editUrl": "/m/show/edit/135411",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135411&start=2022-02-24T18%3A00%3A00-0500"
+  },
+  {
+    "id": 135420,
+    "scheduleId": 141621,
+    "title": "Right On Radio",
+    "text": "Josh",
+    "start": "2022-02-27T16:00:00-0500",
+    "end": "2022-02-27T17:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135420/Right-On-Radio",
+    "editUrl": "/m/show/edit/135420",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135420&start=2022-02-27T16%3A00%3A00-0500"
+  },
+  {
+    "id": 135429,
+    "scheduleId": 141630,
+    "title": "Chiaroscuria",
+    "text": "Aaron Hartley",
+    "start": "2022-02-27T12:00:00-0500",
+    "end": "2022-02-27T13:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/135429/Chiaroscuria",
+    "editUrl": "/m/show/edit/135429",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135429&start=2022-02-27T12%3A00%3A00-0500"
+  },
+  {
+    "id": 135432,
+    "scheduleId": 141633,
+    "title": "LVA's Artebella On The Radio",
+    "text": "Keith Waits",
+    "start": "2022-02-24T10:00:00-0500",
+    "end": "2022-02-24T11:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/135432/LVA-s-Artebella-On-The-Radio",
+    "editUrl": "/m/show/edit/135432",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135432&start=2022-02-24T10%3A00%3A00-0500"
+  },
+  {
+    "id": 135438,
+    "scheduleId": 141639,
+    "title": "subspace",
+    "text": "Aon Brasi",
+    "start": "2022-02-24T09:00:00-0500",
+    "end": "2022-02-24T10:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135438/subspace",
+    "editUrl": "/m/show/edit/135438",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135438&start=2022-02-24T09%3A00%3A00-0500"
+  },
+  {
+    "id": 135444,
+    "scheduleId": 141645,
+    "title": "Cat Casual’s Red River Rally",
+    "text": "Cat Casual",
+    "start": "2022-02-26T16:00:00-0500",
+    "end": "2022-02-26T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135444/Cat-Casual-s-Red-River-Rally",
+    "editUrl": "/m/show/edit/135444",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135444&start=2022-02-26T16%3A00%3A00-0500"
+  },
+  {
+    "id": 135447,
+    "scheduleId": 141648,
+    "title": "BEACHTIME: Sun, Surf, Sails, and Sand",
+    "text": "DJ CLAWDADA",
+    "start": "2022-02-26T15:00:00-0500",
+    "end": "2022-02-26T16:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135447/BEACHTIME-Sun-Surf-Sails-and-Sand",
+    "editUrl": "/m/show/edit/135447",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135447&start=2022-02-26T15%3A00%3A00-0500"
+  },
+  {
+    "id": 135468,
+    "scheduleId": 141669,
+    "title": "Be Here",
+    "text": "Emily Miles",
+    "start": "2022-02-22T12:00:00-0500",
+    "end": "2022-02-22T13:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/135468/Be-Here",
+    "editUrl": "/m/show/edit/135468",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=135468&start=2022-02-22T12%3A00%3A00-0500"
+  },
+  {
+    "id": 166637,
+    "scheduleId": 173627,
+    "title": "All That Jazz",
+    "text": "Juan Leone",
+    "start": "2022-02-26T07:00:00-0500",
+    "end": "2022-02-26T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/166637/All-That-Jazz",
+    "editUrl": "/m/show/edit/166637",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=166637&start=2022-02-26T07%3A00%3A00-0500"
+  },
+  {
+    "id": 190549,
+    "scheduleId": 201982,
+    "title": "Straight-Up Soul",
+    "text": "Sundroptom",
+    "start": "2022-02-25T09:00:00-0500",
+    "end": "2022-02-25T10:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/190549/Straight-Up-Soul",
+    "editUrl": "/m/show/edit/190549",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=190549&start=2022-02-25T09%3A00%3A00-0500"
+  },
+  {
+    "id": 191854,
+    "scheduleId": 203500,
+    "title": "The Electrostatic Test",
+    "text": "Jakey T. Jackson",
+    "start": "2022-02-26T00:00:00-0500",
+    "end": "2022-02-26T02:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/191854/The-Electrostatic-Test",
+    "editUrl": "/m/show/edit/191854",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=191854&start=2022-02-26T00%3A00%3A00-0500"
+  },
+  {
+    "id": 194063,
+    "scheduleId": 271760,
+    "title": "The Big Score",
+    "text": "Doctor K",
+    "start": "2022-02-22T17:00:00-0500",
+    "end": "2022-02-22T18:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/194063/The-Big-Score",
+    "editUrl": "/m/show/edit/194063",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=194063&start=2022-02-22T17%3A00%3A00-0500"
+  },
+  {
+    "id": 195667,
+    "scheduleId": 208672,
+    "title": "Lavender Jam",
+    "text": "Anaïs Spin",
+    "start": "2022-02-24T20:00:00-0500",
+    "end": "2022-02-24T21:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/195667/Lavender-Jam",
+    "editUrl": "/m/show/edit/195667",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=195667&start=2022-02-24T20%3A00%3A00-0500"
+  },
+  {
+    "id": 204311,
+    "scheduleId": 264812,
+    "title": "120 Seconds or Less",
+    "text": "Marc Capelle",
+    "start": "2022-02-24T13:00:00-0500",
+    "end": "2022-02-24T14:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/204311/120-Seconds-or-Less",
+    "editUrl": "/m/show/edit/204311",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=204311&start=2022-02-24T13%3A00%3A00-0500"
+  },
+  {
+    "id": 204314,
+    "scheduleId": 220898,
+    "title": "L.A.M. Radio Hour",
+    "text": "",
+    "start": "2022-02-27T13:00:00-0500",
+    "end": "2022-02-27T14:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/204314/L-A-M-Radio-Hour",
+    "editUrl": "/m/show/edit/204314",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=204314&start=2022-02-27T13%3A00%3A00-0500"
+  },
+  {
+    "id": 205224,
+    "scheduleId": 222717,
+    "title": "I And Eye",
+    "text": "RMLLW2LLZ, DJ DS,and WIP",
+    "start": "2022-02-22T22:00:00-0500",
+    "end": "2022-02-23T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/205224/I-And-Eye",
+    "editUrl": "/m/show/edit/205224",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=205224&start=2022-02-22T22%3A00%3A00-0500"
+  },
+  {
+    "id": 206183,
+    "scheduleId": 224468,
+    "title": "Ear To Ear",
+    "text": "Gregory Acker",
+    "start": "2022-02-27T11:00:00-0500",
+    "end": "2022-02-27T12:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/206183/Ear-To-Ear",
+    "editUrl": "/m/show/edit/206183",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=206183&start=2022-02-27T11%3A00%3A00-0500"
+  },
+  {
+    "id": 213611,
+    "scheduleId": 235421,
+    "title": "Bases Loaded Radio",
+    "text": "Antonio Carlos Echevarría",
+    "start": "2022-02-27T20:00:00-0500",
+    "end": "2022-02-28T00:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/213611/Bases-Loaded-Radio",
+    "editUrl": "/m/show/edit/213611",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=213611&start=2022-02-27T20%3A00%3A00-0500"
+  },
+  {
+    "id": 214985,
+    "scheduleId": 237800,
+    "title": "Roxy Road",
+    "text": "Roxy York",
+    "start": "2022-02-24T14:00:00-0500",
+    "end": "2022-02-24T15:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/214985/Roxy-Road",
+    "editUrl": "/m/show/edit/214985",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=214985&start=2022-02-24T14%3A00%3A00-0500"
+  },
+  {
+    "id": 214988,
+    "scheduleId": 237803,
+    "title": "Alfresco-A-Go-Go!",
+    "text": "Rick Hudson",
+    "start": "2022-02-25T12:00:00-0500",
+    "end": "2022-02-25T13:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/214988/Alfresco-A-Go-Go",
+    "editUrl": "/m/show/edit/214988",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=214988&start=2022-02-25T12%3A00%3A00-0500"
+  },
+  {
+    "id": 216601,
+    "scheduleId": 240634,
+    "title": "Sun Revolutions",
+    "text": "DJ CLAWDADA, DJ Sangmeister",
+    "start": "2022-02-26T13:00:00-0500",
+    "end": "2022-02-26T15:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/216601/Sun-Revolutions",
+    "editUrl": "/m/show/edit/216601",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=216601&start=2022-02-26T13%3A00%3A00-0500"
+  },
+  {
+    "id": 219367,
+    "scheduleId": 245518,
+    "title": "Sad Goddess",
+    "text": "Jaxon Lee Swain",
+    "start": "2022-02-22T13:00:00-0500",
+    "end": "2022-02-22T14:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/219367/Sad-Goddess",
+    "editUrl": "/m/show/edit/219367",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=219367&start=2022-02-22T13%3A00%3A00-0500"
+  },
+  {
+    "id": 221791,
+    "scheduleId": 249067,
+    "title": "Show with No Name",
+    "text": "Aron Conaway",
+    "start": "2022-02-22T00:00:00-0500",
+    "end": "2022-02-22T03:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/221791/Show-with-No-Name",
+    "editUrl": "/m/show/edit/221791",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=221791&start=2022-02-22T00%3A00%3A00-0500"
+  },
+  {
+    "id": 222055,
+    "scheduleId": 249394,
+    "title": "Deus Ex Machina",
+    "text": "",
+    "start": "2022-02-27T07:00:00-0500",
+    "end": "2022-02-27T09:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/222055/Deus-Ex-Machina",
+    "editUrl": "/m/show/edit/222055",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222055&start=2022-02-27T07%3A00%3A00-0500"
+  },
+  {
+    "id": 222064,
+    "scheduleId": 249406,
+    "title": "Audio Andromeda",
+    "text": "",
+    "start": "2022-02-22T07:00:00-0500",
+    "end": "2022-02-22T08:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/222064/Audio-Andromeda",
+    "editUrl": "/m/show/edit/222064",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222064&start=2022-02-22T07%3A00%3A00-0500"
+  },
+  {
+    "id": 222067,
+    "scheduleId": 249409,
+    "title": "Future Offices",
+    "text": "",
+    "start": "2022-02-23T07:00:00-0500",
+    "end": "2022-02-23T08:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/222067/Future-Offices",
+    "editUrl": "/m/show/edit/222067",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222067&start=2022-02-23T07%3A00%3A00-0500"
+  },
+  {
+    "id": 222073,
+    "scheduleId": 249418,
+    "title": "Nature Shock",
+    "text": "",
+    "start": "2022-02-25T07:00:00-0500",
+    "end": "2022-02-25T08:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/222073/Nature-Shock",
+    "editUrl": "/m/show/edit/222073",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222073&start=2022-02-25T07%3A00%3A00-0500"
+  },
+  {
+    "id": 222097,
+    "scheduleId": 249445,
+    "title": "Studio XOX",
+    "text": "",
+    "start": "2022-02-25T14:00:00-0500",
+    "end": "2022-02-25T15:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/222097/Studio-XOX",
+    "editUrl": "/m/show/edit/222097",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222097&start=2022-02-25T14%3A00%3A00-0500"
+  },
+  {
+    "id": 222256,
+    "scheduleId": 264815,
+    "title": "Hard Knock Radio w/ Davey D",
+    "text": "",
+    "start": "2022-02-22T16:00:00-0500",
+    "end": "2022-02-22T17:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/222256/Hard-Knock-Radio-w-Davey-D",
+    "editUrl": "/m/show/edit/222256",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222256&start=2022-02-22T16%3A00%3A00-0500"
+  },
+  {
+    "id": 222746,
+    "scheduleId": 250715,
+    "title": "The Mix",
+    "text": "Ali Longmire-The AP Hour, McKinley",
+    "start": "2022-02-24T15:00:00-0500",
+    "end": "2022-02-24T16:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/222746/The-Mix",
+    "editUrl": "/m/show/edit/222746",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=222746&start=2022-02-24T15%3A00%3A00-0500"
+  },
+  {
+    "id": 223431,
+    "scheduleId": 252201,
+    "title": "3 Bills",
+    "text": "",
+    "start": "2022-02-22T06:00:00-0500",
+    "end": "2022-02-22T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/223431/3-Bills",
+    "editUrl": "/m/show/edit/223431",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223431&start=2022-02-22T06%3A00%3A00-0500"
+  },
+  {
+    "id": 223434,
+    "scheduleId": 252204,
+    "title": "USS Vulcan",
+    "text": "",
+    "start": "2022-02-24T01:00:00-0500",
+    "end": "2022-02-24T04:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223434/USS-Vulcan",
+    "editUrl": "/m/show/edit/223434",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223434&start=2022-02-24T01%3A00%3A00-0500"
+  },
+  {
+    "id": 223437,
+    "scheduleId": 252207,
+    "title": "Echo Vacuum",
+    "text": "",
+    "start": "2022-02-22T04:00:00-0500",
+    "end": "2022-02-22T06:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223437/Echo-Vacuum",
+    "editUrl": "/m/show/edit/223437",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223437&start=2022-02-22T04%3A00%3A00-0500"
+  },
+  {
+    "id": 223440,
+    "scheduleId": 252210,
+    "title": "Receptor Rodeo",
+    "text": "",
+    "start": "2022-02-24T04:00:00-0500",
+    "end": "2022-02-24T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/223440/Receptor-Rodeo",
+    "editUrl": "/m/show/edit/223440",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223440&start=2022-02-24T04%3A00%3A00-0500"
+  },
+  {
+    "id": 223443,
+    "scheduleId": 252213,
+    "title": "Marsha's Mash-up",
+    "text": "",
+    "start": "2022-02-25T02:00:00-0500",
+    "end": "2022-02-25T04:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223443/Marsha-s-Mash-up",
+    "editUrl": "/m/show/edit/223443",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223443&start=2022-02-25T02%3A00%3A00-0500"
+  },
+  {
+    "id": 223479,
+    "scheduleId": 252279,
+    "title": "Garden of Earthly Delights",
+    "text": "",
+    "start": "2022-02-24T07:00:00-0500",
+    "end": "2022-02-24T08:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/223479/Garden-of-Earthly-Delights",
+    "editUrl": "/m/show/edit/223479",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223479&start=2022-02-24T07%3A00%3A00-0500"
+  },
+  {
+    "id": 223566,
+    "scheduleId": 252402,
+    "title": "Frozen Warnings",
+    "text": "",
+    "start": "2022-02-26T02:00:00-0500",
+    "end": "2022-02-26T04:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223566/Frozen-Warnings",
+    "editUrl": "/m/show/edit/223566",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223566&start=2022-02-26T02%3A00%3A00-0500"
+  },
+  {
+    "id": 223572,
+    "scheduleId": 252408,
+    "title": "The Sixth Element",
+    "text": "",
+    "start": "2022-02-23T02:00:00-0500",
+    "end": "2022-02-23T04:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223572/The-Sixth-Element",
+    "editUrl": "/m/show/edit/223572",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223572&start=2022-02-23T02%3A00%3A00-0500"
+  },
+  {
+    "id": 223575,
+    "scheduleId": 252411,
+    "title": "The Raft of The Medusa",
+    "text": "",
+    "start": "2022-02-26T04:00:00-0500",
+    "end": "2022-02-26T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223575/The-Raft-of-The-Medusa",
+    "editUrl": "/m/show/edit/223575",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223575&start=2022-02-26T04%3A00%3A00-0500"
+  },
+  {
+    "id": 223578,
+    "scheduleId": 252414,
+    "title": "Out of My Dreams, Into My Car",
+    "text": "",
+    "start": "2022-02-22T03:00:00-0500",
+    "end": "2022-02-22T04:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223578/Out-of-My-Dreams-Into-My-Car",
+    "editUrl": "/m/show/edit/223578",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223578&start=2022-02-22T03%3A00%3A00-0500"
+  },
+  {
+    "id": 223587,
+    "scheduleId": 252423,
+    "title": "Suite Sistine Radio",
+    "text": "",
+    "start": "2022-02-27T03:00:00-0500",
+    "end": "2022-02-27T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223587/Suite-Sistine-Radio",
+    "editUrl": "/m/show/edit/223587",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223587&start=2022-02-27T03%3A00%3A00-0500"
+  },
+  {
+    "id": 223590,
+    "scheduleId": 252426,
+    "title": "Love + Love = Love",
+    "text": "",
+    "start": "2022-02-25T04:00:00-0500",
+    "end": "2022-02-25T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223590/Love-Love-Love",
+    "editUrl": "/m/show/edit/223590",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223590&start=2022-02-25T04%3A00%3A00-0500"
+  },
+  {
+    "id": 223593,
+    "scheduleId": 252429,
+    "title": "Funky Farm",
+    "text": "",
+    "start": "2022-02-23T04:00:00-0500",
+    "end": "2022-02-23T06:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223593/Funky-Farm",
+    "editUrl": "/m/show/edit/223593",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223593&start=2022-02-23T04%3A00%3A00-0500"
+  },
+  {
+    "id": 223596,
+    "scheduleId": 252432,
+    "title": "We Are the Music Makers",
+    "text": "",
+    "start": "2022-02-23T06:00:00-0500",
+    "end": "2022-02-23T07:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-unset",
+    "url": "/WXOX/show/223596/We-Are-the-Music-Makers",
+    "editUrl": "/m/show/edit/223596",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "unset"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=223596&start=2022-02-23T06%3A00%3A00-0500"
+  },
+  {
+    "id": 231150,
+    "scheduleId": 265874,
+    "title": "Transworld Airwaves",
+    "text": "",
+    "start": "2022-02-26T12:00:00-0500",
+    "end": "2022-02-26T13:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/231150/Transworld-Airwaves",
+    "editUrl": "/m/show/edit/231150",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=231150&start=2022-02-26T12%3A00%3A00-0500"
+  },
+  {
+    "id": 231156,
+    "scheduleId": 264789,
+    "title": "Live From The Addition",
+    "text": "Dirty Ol&#039;Ambusher",
+    "start": "2022-02-24T00:00:00-0500",
+    "end": "2022-02-24T01:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/231156/Live-From-The-Addition",
+    "editUrl": "/m/show/edit/231156",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=231156&start=2022-02-24T00%3A00%3A00-0500"
+  },
+  {
+    "id": 231168,
+    "scheduleId": 264801,
+    "title": "Earth Tones",
+    "text": "DJ Bones",
+    "start": "2022-02-22T20:00:00-0500",
+    "end": "2022-02-22T21:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/231168/Earth-Tones",
+    "editUrl": "/m/show/edit/231168",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=231168&start=2022-02-22T20%3A00%3A00-0500"
+  },
+  {
+    "id": 231171,
+    "scheduleId": 264804,
+    "title": "Primitive Future",
+    "text": "DJ Bones",
+    "start": "2022-02-22T21:00:00-0500",
+    "end": "2022-02-22T22:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/231171/Primitive-Future",
+    "editUrl": "/m/show/edit/231171",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=231171&start=2022-02-22T21%3A00%3A00-0500"
+  },
+  {
+    "id": 233363,
+    "scheduleId": 267710,
+    "title": "NoiseFilter Radio",
+    "text": "",
+    "start": "2022-02-22T11:00:00-0500",
+    "end": "2022-02-22T11:30:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-talk",
+    "url": "/WXOX/show/233363/NoiseFilter-Radio",
+    "editUrl": "/m/show/edit/233363",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Talk"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=233363&start=2022-02-22T11%3A00%3A00-0500"
+  },
+  {
+    "id": 234813,
+    "scheduleId": 269745,
+    "title": "AfroSonic Taxi",
+    "text": "",
+    "start": "2022-02-22T15:00:00-0500",
+    "end": "2022-02-22T16:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/234813/AfroSonic-Taxi",
+    "editUrl": "/m/show/edit/234813",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=234813&start=2022-02-22T15%3A00%3A00-0500"
+  },
+  {
+    "id": 235892,
+    "scheduleId": 271763,
+    "title": "Baroque and Beyond",
+    "text": "",
+    "start": "2022-02-22T11:30:00-0500",
+    "end": "2022-02-22T12:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/235892/Baroque-and-Beyond",
+    "editUrl": "/m/show/edit/235892",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=235892&start=2022-02-22T11%3A30%3A00-0500"
+  },
+  {
+    "id": 235895,
+    "scheduleId": 271766,
+    "title": "Trance-Formational Listening",
+    "text": "",
+    "start": "2022-02-26T11:00:00-0500",
+    "end": "2022-02-26T12:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/235895/Trance-Formational-Listening",
+    "editUrl": "/m/show/edit/235895",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=235895&start=2022-02-26T11%3A00%3A00-0500"
+  },
+  {
+    "id": 235901,
+    "scheduleId": 271772,
+    "title": "Winterlude",
+    "text": "",
+    "start": "2022-02-26T09:00:00-0500",
+    "end": "2022-02-26T10:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-experimental",
+    "url": "/WXOX/show/235901/Winterlude",
+    "editUrl": "/m/show/edit/235901",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Experimental"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=235901&start=2022-02-26T09%3A00%3A00-0500"
+  },
+  {
+    "id": 236898,
+    "scheduleId": 273405,
+    "title": "Donne del Mundo",
+    "text": "",
+    "start": "2022-02-22T14:00:00-0500",
+    "end": "2022-02-22T15:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/236898/Donne-del-Mundo",
+    "editUrl": "/m/show/edit/236898",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=236898&start=2022-02-22T14%3A00%3A00-0500"
+  },
+  {
+    "id": 237216,
+    "scheduleId": 273891,
+    "title": "BantuNauts RAYdio",
+    "text": "",
+    "start": "2022-02-25T10:00:00-0500",
+    "end": "2022-02-25T12:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/237216/BantuNauts-RAYdio",
+    "editUrl": "/m/show/edit/237216",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=237216&start=2022-02-25T10%3A00%3A00-0500"
+  },
+  {
+    "id": 242039,
+    "scheduleId": 281159,
+    "title": "Arcade Automatic",
+    "text": "DJ Maully",
+    "start": "2022-02-22T19:00:00-0500",
+    "end": "2022-02-22T20:00:00-0500",
+    "oneOff": false,
+    "className": "spin-cal-show category-music",
+    "url": "/WXOX/show/242039/Arcade-Automatic",
+    "editUrl": "/m/show/edit/242039",
+    "deleteUrl": null,
+    "rebroadcastUrl": "",
+    "retireUrl": "",
+    "editable": false,
+    "data": {
+      "category": "Music"
+    },
+    "playlistUrl": "/m/playlist/create?show_id=242039&start=2022-02-22T19%3A00%3A00-0500"
+  }
+]

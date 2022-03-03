@@ -1,8 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import React, {
+  useEffect,
+  useState
+} from 'react'
+// import Hls from "hls.js"
+// "https://tailwindcss.com/img/card-top.jpg"
+import useSWR from 'swr'
+import { PlayIcon, PauseIcon } from '@heroicons/react/solid'
+import Player from '../components/Player'
+import Shows from '../components/Shows'
 
-export default function Home() {
+
+
+const Home = () => {
+
+  const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
+  const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,49 +29,16 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://artxfm.org">Radio</a>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <Player/>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Shows/>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
+        <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
@@ -67,3 +50,17 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
+
+  // useEffect(() => {
+  //   const audio = player;
+  //   const hls = new Hls();
+  //   // const url = 'https://ark3.spinitron.com/ark2/WXOX-20220220T190000Z/index.m3u8'
+  //   const url = 'https://ark3.spinitron.com/ark2/WXOX-20220221T120000Z/index.m3u8'
+
+  //   hls.loadSource(url);
+  //   hls.attachMedia(audio);
+  //   hls.on(Hls.Events.MANIFEST_PARSED, function() { audio.play(); });
+
+  // }, [player]);
