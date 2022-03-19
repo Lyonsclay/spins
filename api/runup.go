@@ -29,11 +29,15 @@ func GetPlaylist(path string) string {
 	body := doc.Find("body")
 	data := body.Find("div", "class", "data")
 	title := data.Find("h3", "class", "show-title").Find("a")
-	timeslot := data.Find("p", "class", "timeslot").Find("li")
-	category := data.Find("p", "class", "show-category")
+	timeslot := data.Find("p", "class", "timeslot")
+	category := data.Find("p", "class", "show-categoty")
 	dj := data.Find("p", "class", "dj-name").Find("a")
 	// out := title.Text() + timeslot.Text()
-	out := fmt.Sprintf("%v %v %v %v", title.Text(), timeslot.Text(), category.Text(), dj.Text())
+	out := fmt.Sprintf("%s %s %s %s", title.Text(), timeslot.Text(), category.Text(), dj.Text())
+	fmt.Println(title)
+	fmt.Println(timeslot)
+	fmt.Println(category)
+	fmt.Println(dj)
 	return out
 }
 
@@ -41,10 +45,10 @@ func SnowHandler(w http.ResponseWriter, r *http.Request) {
 	u := r.URL.RawQuery
 	p, _ := url.ParseQuery(u)
 	sp := "https://spinitron.com" + p["path"][0]
-	// out := GetPlaylist(sp)
+	out := GetPlaylist(sp)
 
 
-	// fmt.Println(out)
+	fmt.Println(out)
 	currentTime := time.Now().Format(time.RFC850)
 
 	fmt.Println(currentTime)
