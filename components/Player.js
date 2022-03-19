@@ -2,7 +2,7 @@ import React, {
   useEffect,
   useState
 } from 'react'
-import { PlayIcon, PauseIcon } from '@heroicons/react/solid'
+import { PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
 import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -43,6 +43,19 @@ const PlayPause = ({ audio }) => {
 
 }
 
+const PlayerImage = ({ url }) => {
+  const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
+  if (url == defaultImage) {
+    return <MusicNoteIcon className="text-[#161c22] gravity" />
+  } else {
+    return (
+      <img className="rounded hidden md:block"
+        src={url} alt="Album Pic">
+      </img>
+
+    )
+  }
+}
 
 const Player = () => {
 
@@ -52,13 +65,12 @@ const Player = () => {
 
 
   useEffect(() => {
-    const audio = new Audio(url);
+    const audio = new Audio({ url });
     // const stream = audio.captureStream()
     // audio.captureStream()
     setAudio(audio)
   }, [audio?.play])
 
-  const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
 
   if (!(typeof audio?.play === 'function')) return <div>Loading Audio...</div>
   if (error) return <div>Failed to load</div>
@@ -68,29 +80,31 @@ const Player = () => {
       audio.volume = e.target.value / 100
     }
     // setAudio(audio)
-    console.log({ volume: e.target.value })
-
+    // console.log({ volume: e.target.value })
   }
+  console.log({ data })
   return (
-    <div className="shadow-lg rounded-lg" >
+    <div className="border-solid border border-slate-600  rounded shadow-lg pt-0 pr-1 max-width-8" >
 
-      <div className="grid grid-cols-2 place-content-evenly border-solid border-2 border-sky-100">
-        <img className="max-w-sm rounded hidden md:block" src={data?.imageUrl} alt="Album Pic">
-        </img>
+      <div className="grid grid-cols-2 place-content-evenly">
+
+        <div className="grid-cols-1">
+          <PlayerImage url={data?.imageUrl} />
+        </div>
 
         <div className="grid grid-cols-1 place-content-evently m-4">
           <div className="flex flex-col">
             <div className="flex flex-row justify-between">
-              <h3 className="text-2xl text-grey-darkest font-medium">{data?.song}</h3>
+              <h3 className="text-2xl text-gray-200 font-medium">{data?.song}</h3>
               <div className="text-red-500">
                 <Heart />
               </div>
             </div >
             <div className="max-w-md">
-              <p className="indent-1.5 text-sm text-grey mt-1">{data?.artist}</p>
+              <p className="indent-1.5 text-sm text-gray-500 mt-1">{data?.artist}</p>
             </div>
             <div className="max-w-md">
-              <p className="indent-1.5 text-sm text-grey mt-1">{data?.label}</p>
+              <p className="indent-1.5 text-sm text-gray-400 mt-1">{data?.label}</p>
             </div>
             <div className="max-w-md">
               {data?.composer && <p className="indent-1.5 text-sm text-grey mt-1">{data?.composer}</p>}

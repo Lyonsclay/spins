@@ -23,6 +23,7 @@ import (
 // 	"editable":false,"data":{"category":"Music"}}
 
 type Show struct {
+	Id    int `json:"id"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
 	Start string `json:"start"`
@@ -30,9 +31,11 @@ type Show struct {
 	Url   string `json:"url"`
 }
 
-func GetShows() string {
-	// url := "https://spinitron.com/WXOX/"
+
+func GetCalendar() string {
+	// base := "https://spinitron.com/WXOX"
 	url := "https://spinitron.com/WXOX/calendar-feed?start=2022-02-20T00:00:00&end=2022-02-27T06:59:59"
+	// res, err := http.Get(base + url)
 	res, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
@@ -43,7 +46,6 @@ func GetShows() string {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	var shows []Show
 	err = json.Unmarshal(body, &shows)
 	if err != nil {
@@ -66,10 +68,9 @@ func GetShows() string {
 	}
 
 	return string(blob)
-
 }
 
-func ShowsHandler(w http.ResponseWriter, r *http.Request) {
-	shows := GetShows()
+func CalendarHandler(w http.ResponseWriter, r *http.Request) {
+	shows := GetCalendar()
 	fmt.Fprintf(w, "%v", shows)
 }

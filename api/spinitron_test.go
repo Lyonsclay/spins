@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/anaskhan96/soup"
 	"testing"
+	"time"
 )
 
 func TestSpinitronParse(t *testing.T) {
@@ -41,10 +42,21 @@ func TestGetCurrentSpin(t *testing.T) {
 }
 
 func TestGetShows(t *testing.T) {
-	s := GetShows()
+	s := GetCalendar()
 	output := s
 	expected := ""
 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
 	}
+}
+
+func TestTimeOut(t *testing.T) {
+	now := time.Now()
+	s := now.Format("20060102030405")
+	output := s
+	expected := ""
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+
 }
