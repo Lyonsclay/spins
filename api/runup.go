@@ -5,7 +5,7 @@ import (
 
 	"fmt"
 	"net/http"
-	"net/url"
+	// "net/url"
 	"time"
 	// "io/ioutil"
 	"log"
@@ -42,13 +42,14 @@ func GetPlaylist(path string) string {
 }
 
 func SnowHandler(w http.ResponseWriter, r *http.Request) {
-	u := r.URL.RawQuery
-	p, _ := url.ParseQuery(u)
-	sp := "https://spinitron.com" + p["path"][0]
-	out := GetPlaylist(sp)
+	// u := r.URL.RawQuery
+	// p, _ := url.ParseQuery(u)
+	// sp := "https://spinitron.com" + p["path"][0]
+	// out := GetPlaylist(sp)
 
 
-	fmt.Println(out)
+	sp := "who gives a crap ??????????????????????????"
+	// fmt.Println(out)
 	currentTime := time.Now().Format(time.RFC850)
 
 	fmt.Println(currentTime)
