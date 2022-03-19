@@ -53,6 +53,6 @@ func SnowHandler(w http.ResponseWriter, r *http.Request) {
 	currentTime := time.Now().Format(time.RFC850)
 
 	fmt.Println(currentTime)
-	fmt.Fprintf(w, "%v", sp)
+	fmt.Fprintf(w, "%s", sp)
 
 }
