@@ -43,7 +43,7 @@ const timeFormat = (time) => {
   return time
 }
 const Show = ({ title, text, start, end, url }) => {
-  const selectShow = () => fetch('/api/shownuff', {headers: {
+  const selectShow = () => fetch('/api/runup?path=' + url, {headers: {
     'Content-Type': 'application/json'
   }}).then((res) => { console.log({ res }); return res.text() }).then(data => console.log({ data }))
   // const selectShow = () => fetch('/api/shownuff').then(data => console.log({ data }))
