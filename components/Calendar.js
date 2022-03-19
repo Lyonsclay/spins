@@ -22,7 +22,7 @@ const dateFormat = (time) => {
   }
   time = date.toLocaleTimeString("en-us", options)
   time = time.split(',').slice(0, -2).join(" ")
-  console.log({ time })
+  // console.log({ time })
   return time
 }
 const startTimeFormat = (time) => {
@@ -43,8 +43,11 @@ const timeFormat = (time) => {
   return time
 }
 const Show = ({ title, text, start, end, url }) => {
-  // const selectShow = () => fetch('/api/show/?path=' + url).then(data => console.log({data}))
-  const selectShow = () => console.log({url})
+  const selectShow = () => fetch('/api/shownuff', {headers: {
+    'Content-Type': 'application/json'
+  }}).then((res) => { console.log({ res }); return res.text() }).then(data => console.log({ data }))
+  // const selectShow = () => fetch('/api/shownuff').then(data => console.log({ data }))
+  // const selectShow = () => console.log({url})
   return (
     <tr className="transition duration-300 ease-in-out hover:bg-[#161c22]">
       <td className="w-2/3 flex flex-col">
