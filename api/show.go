@@ -2,24 +2,29 @@ package spinitron
 
 import (
 	"fmt"
+	// "github.com/anaskhan96/soup"
 	"net/http"
 	"net/url"
-	"log"
 )
 
-type ShowNuff struct {
-	Title    string `json:"title"`
-	Timeslot string `json:"timeslot"`
-	Category string `json:"category"`
-	DJ       string `json:"dj"`
+func GetShow(path string) string {
+	// res, err := soup.Get(path)
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// doc := soup.HTMLParse(res)
+	// body := doc.Find("body")
+	// return body.Text()
+	return path
 }
 
 func Harphandler(w http.ResponseWriter, r *http.Request) {
 	u := r.URL.RawQuery
 	p, err := url.ParseQuery(u)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
-	path := "https://spinitron.com" + p["path"][0]
-	fmt.Fprintf(w,"%v", path)
+	path := p["path"]
+
+	fmt.Fprintf(w, "{\"path\": \"%v\"}", path)
 }

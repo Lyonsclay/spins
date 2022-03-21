@@ -5,6 +5,8 @@ import (
 	"github.com/anaskhan96/soup"
 	"testing"
 	"time"
+	"net/url"
+	// "log"
 )
 
 func TestSpinitronParse(t *testing.T) {
@@ -43,6 +45,16 @@ func TestCalendar(t *testing.T) {
 	}
 }
 
+func TestGetShow(t *testing.T) {
+	u := "https://spinitron.com/WXOX/pl/15379281/Winterlude"
+	out := GetShow(u)
+	output := out
+	expected := "out"
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+}
+
 func TestGetCurrentSpin(t *testing.T) {
 	s := GetCurrentSpin()
 	output := s
@@ -51,6 +63,22 @@ func TestGetCurrentSpin(t *testing.T) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
 	}
 }
+
+func TestParseQuery(t *testing.T) {
+	u := "https://google.com/drivers?one=two"
+	p, err := url.ParseQuery(u)
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	output := p["one"]
+	expected := err
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+
+}
+
+
 
 func TestGetShows(t *testing.T) {
 	s := GetCalendar()

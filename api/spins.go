@@ -39,7 +39,6 @@ func GetCurrentSpin() string {
 	}
 	spins := sp.Find("table").FindAll("tr")[0]
 
-
 	art := spins.Find("td", "class", "spin-art").Find("img").Attrs()
 	imageUrl := art["src"]
 	imageUrl = strings.Replace(imageUrl, "170x170","600x600", 1)
