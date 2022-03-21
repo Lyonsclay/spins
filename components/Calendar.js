@@ -46,7 +46,7 @@ const Show = ({ title, text, start, end, url }) => {
   // const selectShow = () => fetch('/api/runup?path=' + url, {headers: {
   //   'Content-Type': 'application/json'
   // }}).then((res) => { console.log({ res }); return res.text() }).then(data => console.log({ data }))
-  const selectShow = () => fetch('/api/runup?path=' + url).then(res => res.text()).then(data => console.log({ data }))
+  const selectShow = () => fetch('/api/show?path=' + url).then(res => res).then(data => console.log({ data }))
   // const selectShow = () => console.log({url})
   return (
     <tr className="transition duration-300 ease-in-out hover:bg-[#161c22]">

@@ -74,8 +74,8 @@ func TestTimeOut(t *testing.T) {
 
 func TestGetPlaylist(t *testing.T) {
 	path := "https://spinitron.com" + "/WXOX/pl/15610668/Sun-Revolutions"
-	res := GetPlaylist(path)
-	output := res
+	// res := GetPlaylist(path)
+	output := path
 	expected := "pay"
 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
