@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 	"net/url"
-	// "log"
+	"log"
 )
 
 func TestSpinitronParse(t *testing.T) {
@@ -21,6 +21,43 @@ func TestSpinitronParse(t *testing.T) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
 	}
 }
+
+func TestPlayListParse(t *testing.T) {
+	u := "https://spinitron.com/WXOX/pl/15375723/Mythic-Beat"
+	res, err := soup.Get(u)
+	if err != nil {
+		log.Fatal(err)
+	}
+	doc := soup.HTMLParse(res)
+
+	body := doc.Find("body")
+	playlist := body.Find("div", "class", "playlist")
+	image := playlist.Find("div","class","image").Find("img")
+	output := image.Attrs()["src"]
+	expected := err
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+}
+
+func TestDescriptionParse(t *testing.T) {
+	u := "https://spinitron.com/WXOX/pl/15375723/Mythic-Beat"
+	res, err := soup.Get(u)
+	if err != nil {
+		log.Fatal(err)
+	}
+	doc := soup.HTMLParse(res)
+	body := doc.Find("body")
+	data := body.Find("div", "class", "data")
+	description := data.Find("div","class","description")
+	output := description.Text() 
+	
+	expected := err
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+}
+
 var resources = []string{
 	"https://spinitron.com/WXOX/",
 	"https://spinitron.com/WXOX/dj/103719/Ben-Zoeller",

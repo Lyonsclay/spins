@@ -15,6 +15,8 @@ type Show struct {
 	Timeslot string `json:"timeslot"`
 	Category string `json:"category"`
 	DJ       string `json:"dj"`
+	Image    string `json:"image"`
+	Description    string `json:"description"`
 }
 
 func GetShow(path string) string {
@@ -31,6 +33,10 @@ func GetShow(path string) string {
 	timeslot := data.Find("p", "class", "timeslot")
 	category := data.Find("p", "class", "show-categoty")
 	dj := data.Find("p", "class", "dj-name").Find("a")
+	playlist := body.Find("div", "class", "playlist")
+	image := playlist.Find("div","class","image").Find("img")
+	description := data.Find("div","class","description")
+
 	var out Show
 	if title.NodeValue != "" {
 		out.Title = title.Text()
@@ -43,6 +49,12 @@ func GetShow(path string) string {
 	}
 	if dj.NodeValue != "" {
 		out.DJ = dj.Text()
+	}
+	if description.NodeValue != "" {
+		out.Description = description.FullText()
+	}
+	if image.NodeValue != "" {
+		out.Image = image.Attrs()["src"]
 	}
 
 	// blob, err := json.MarshalIndent(out, "", "\t")
