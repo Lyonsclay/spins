@@ -43,7 +43,8 @@ const timeFormat = (time) => {
   return time
 }
 const Show = ({ title, text, start, end, url }) => {
-  const selectShow = () => fetch('/api/show?path=' + url).then(res => res.json()).then(console.log)
+  console.log({ url })
+  const selectShow = () => fetch('/api/show?path=' + url).then(res => res.text()).then(console.log)
   return (
     <tr className="transition duration-300 ease-in-out hover:bg-[#161c22]">
       <td className="w-2/3 flex flex-col">

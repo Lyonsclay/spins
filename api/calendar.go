@@ -22,7 +22,7 @@ import (
 // 	"retireUrl":"",
 // 	"editable":false,"data":{"category":"Music"}}
 
-type Show struct {
+type Slot struct {
 	Id    int `json:"id"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
@@ -46,7 +46,7 @@ func GetCalendar() string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	var shows []Show
+	var shows []Slot
 	err = json.Unmarshal(body, &shows)
 	if err != nil {
 		log.Fatal(err)

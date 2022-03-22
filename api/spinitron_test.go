@@ -45,15 +45,15 @@ func TestCalendar(t *testing.T) {
 	}
 }
 
-// func TestGetShow(t *testing.T) {
-// 	u := "https://spinitron.com/WXOX/pl/15379281/Winterlude"
-// 	out := GetShow(u)
-// 	output := out
-// 	expected := "out"
-// 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
-// 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
-// 	}
-// }
+func TestGetOneShow(t *testing.T) {
+	u := "https://spinitron.com/WXOX/pl/15379281/Winterlude"
+	out := GetShow(u)
+	output := out
+	expected := "out"
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+}
 
 func TestGetCurrentSpin(t *testing.T) {
 	s := GetCurrentSpin()
