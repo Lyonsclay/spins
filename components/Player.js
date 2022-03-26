@@ -2,7 +2,7 @@ import React, {
   useEffect,
   useState
 } from 'react'
-import { PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
+import { HeartIcon, PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
 import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -37,7 +37,7 @@ const PlayPause = ({ audio }) => {
     <button onClick={togglePlay}>
       {audio && (play ?
         <PauseIcon className="fill-red-500 w-20 h-20" />
-        : <PlayIcon className="fill-red-500  w-20 h-20" />)}
+        : <PlayIcon className="text-red-500  w-20 h-20" />)}
     </button>
   )
 
@@ -65,7 +65,7 @@ const Player = () => {
 
 
   useEffect(() => {
-    const audio = new Audio({ url });
+    const audio = new Audio( url );
     // const stream = audio.captureStream()
     // audio.captureStream()
     setAudio(audio)
@@ -82,7 +82,6 @@ const Player = () => {
     // setAudio(audio)
     // console.log({ volume: e.target.value })
   }
-  console.log({ data })
   return (
     <div className="border-solid border border-slate-600  rounded shadow-lg pt-0 pr-1 max-width-8" >
 
@@ -92,12 +91,12 @@ const Player = () => {
           <PlayerImage url={data?.imageUrl} />
         </div>
 
-        <div className="grid grid-cols-1 place-content-evently m-4">
+        <div className="grid grid-cols-1 place-content-evently m-4 ml-8">
           <div className="flex flex-col">
             <div className="flex flex-row justify-between">
-              <h3 className="text-2xl text-gray-200 font-medium">{data?.song}</h3>
+              <h3 className="mt-6 text-2xl text-gray-200 font-medium">{data?.song}</h3>
               <div className="text-red-500">
-                <Heart />
+                <HeartIcon className="text-red-500  w-8 h-8" />
               </div>
             </div >
             <div className="max-w-md">

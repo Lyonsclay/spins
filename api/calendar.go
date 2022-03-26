@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	// "github.com/anaskhan96/soup"
+	"time"
 )
 
 // {"id":15375164,
@@ -23,7 +23,7 @@ import (
 // 	"editable":false,"data":{"category":"Music"}}
 
 type Slot struct {
-	Id    int `json:"id"`
+	Id    int    `json:"id"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
 	Start string `json:"start"`
@@ -31,17 +31,32 @@ type Slot struct {
 	Url   string `json:"url"`
 }
 
+func getTimeRange() string {
+	now := time.Now()
+	stop := now.Format("2006-01-02T15:04:05")
+	start := now.AddDate(0, 0, -7).Format("2006-01-02T15:04:05")
+	query := fmt.Sprintf("?start=%v&end=%v", start, stop)
+	return query
+}
+
+func reverseSlice(s []Slot) []Slot {
+	l := len(s)
+	rev := make([]Slot,l)
+	for i,v := range(s) {
+		rev[l - i - 1] = v
+	}
+	return rev[4:]
+}
 
 func GetCalendar() string {
 	// base := "https://spinitron.com/WXOX"
-	url := "https://spinitron.com/WXOX/calendar-feed?start=2022-02-20T00:00:00&end=2022-02-27T06:59:59"
-	// res, err := http.Get(base + url)
-	res, err := http.Get(url)
+	url := "https://spinitron.com/WXOX/calendar-feed"
+	q := getTimeRange()
+	res, err := http.Get(url + q)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer res.Body.Close()
-	//We Read the response body on the line below.
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		log.Fatal(err)
@@ -51,17 +66,7 @@ func GetCalendar() string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// fmt.Printf("%T - %v", shows, shows[0])
-	//Convert the body to type string
-	// sb := string(body)
-	// log.Println(sb)
-	// return sb
-	// var results []Show
-	// for _, v := range body {
-	// 	results = append(results, v)
-	// }
-	// return results
-
+	shows = reverseSlice(shows)
 	blob, err := json.MarshalIndent(shows, "", "\t")
 	if err != nil {
 		log.Fatalf("Error marshaling json: %v \n", err)

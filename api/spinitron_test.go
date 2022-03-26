@@ -3,10 +3,10 @@ package spinitron
 import (
 	"fmt"
 	"github.com/anaskhan96/soup"
+	"log"
+	"net/url"
 	"testing"
 	"time"
-	"net/url"
-	"log"
 )
 
 func TestSpinitronParse(t *testing.T) {
@@ -32,7 +32,7 @@ func TestPlayListParse(t *testing.T) {
 
 	body := doc.Find("body")
 	playlist := body.Find("div", "class", "playlist")
-	image := playlist.Find("div","class","image").Find("img")
+	image := playlist.Find("div", "class", "image").Find("img")
 	output := image.Attrs()["src"]
 	expected := err
 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
@@ -49,9 +49,9 @@ func TestDescriptionParse(t *testing.T) {
 	doc := soup.HTMLParse(res)
 	body := doc.Find("body")
 	data := body.Find("div", "class", "data")
-	description := data.Find("div","class","description")
-	output := description.Text() 
-	
+	description := data.Find("div", "class", "description")
+	output := description.Text()
+
 	expected := err
 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
@@ -68,7 +68,6 @@ var resources = []string{
 	"https://spinitron.com/WXOX/calendar-feed?start=2022-02-20T00:00:00&end=2022-02-27T06:59:59",
 	"http://widgets.spinitron.com/widget/now-playing-v2?callback=_spinitron04669496113876874164549461312&station=wxox&num=1&sharing=0&player=0&cover=0",
 }
-
 
 func TestCalendar(t *testing.T) {
 	cal := resources[6]
@@ -115,8 +114,6 @@ func TestParseQuery(t *testing.T) {
 
 }
 
-
-
 func TestGetShows(t *testing.T) {
 	s := GetCalendar()
 	output := s
@@ -127,14 +124,29 @@ func TestGetShows(t *testing.T) {
 }
 
 func TestTimeOut(t *testing.T) {
+	// q := "start=2022-02-20T00:00:00&end=2022-02-27T06:59:59"
 	now := time.Now()
-	s := now.Format("20060102030405")
-	output := s
+	st := now.Format("2006-01-02T15:04:05")
+	s := now.AddDate(0, 0, -7).Format("2006-01-02T15:04:05")
+	output := fmt.Sprintf("%v::%v", s, st)
 	expected := ""
 	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
 		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
 	}
+}
 
+func TestReverseSlice(t *testing.T) {
+	order := []int{1, 2, 3, 4, 5, 6, 7,8}
+	l := len(order)
+	now := make([]int,8)
+	for i,v := range(order) {
+		now[l - i - 1] = v
+	}
+	output := now
+	expected := "pay"
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
 }
 
 func TestGetPlaylist(t *testing.T) {
