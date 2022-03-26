@@ -52,38 +52,35 @@ const Slot = ({ title, text, start, end, url }) => {
       .then(setShowData)
       .then(() => setView("show"))
   }
+  const cancel = () => {
+    setView('slot')
+  }
   const goback = () => setView("slot")
 
-  if (view == "slot") return (
+  if (view == "slot" || view == "loading") return (
     <tr className="transition duration-300 ease-in-out hover:bg-[#161c22]">
       <td className="w-2/3 flex flex-col">
-        <th className="text-left ml-4">{dateFormat(start)}</th>
+        <span className="text-slate-300 font-medium text-left ml-4">{dateFormat(start)}</span>
         <span className="text-left ml-4">{timeFormat(start)}-{timeFormat(end)}</span>
       </td>
       <td className="w-1/3 text-center">
-        <button onClick={selectSlot}>
-          <span className="hover:text-sky-600">{title}</span>
-        </button>
+        {view == "loading" ?
+         <button onClick={cancel}>
+          <span class="flex flex-row justify-center">
+            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+          </span>
+         </button>
+          :
+          <button onClick={selectSlot}>
+            <span className="hover:text-sky-600">{title}</span>
+          </button>}
       </td>
       <td className="w-1/3 text-center">{text}</td>
     </tr>
   )
-  if (view == "loading") return (
-    <tr className="transition duration-300 ease-in-out hover:bg-[#161c22]">
-      <td className="w-2/3 flex flex-col">
-        <th className="text-left ml-4">{dateFormat(start)}</th>
-        <span className="text-left ml-4">{timeFormat(start)}-{timeFormat(end)}</span>
-      </td>
-      <td className="w-1/3 ">
-        <span class="flex flex-row justify-center">
-          <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
-          <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
-          <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
-        </span>
-      </td>
-      <td className="w-1/3 text-center">{text}</td>
-    </tr>
-  )
+
   return (<Show goback={goback} {...showData} />)
 }
 const Shows = () => {
@@ -111,8 +108,8 @@ const Shows = () => {
         </thead>
 
         <tbody className="divide-y divide-gray-500 font-light text-slate-400">
-          {shows.slice(0, -1)?.map(d => (
-            <Slot title={d.title} text={d.text} start={d.start} end={d.end} url={d.url} key={d.title + d.start} />
+          {shows.slice(0, -1)?.map((d, i) => (
+            <Slot title={d.title} text={d.text} start={d.start} end={d.end} url={d.url} key={d.title + i} />
           ))}
         </tbody>
 

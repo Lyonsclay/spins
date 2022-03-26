@@ -36,8 +36,8 @@ const PlayPause = ({ audio }) => {
   return (
     <button onClick={togglePlay}>
       {audio && (play ?
-        <PauseIcon className="fill-red-500 w-20 h-20" />
-        : <PlayIcon className="text-red-500  w-20 h-20" />)}
+        <PauseIcon className="fill-red-500 w-14 h-14" />
+        : <PlayIcon className="text-red-500  w-14 h-14" />)}
     </button>
   )
 
@@ -49,7 +49,7 @@ const PlayerImage = ({ url }) => {
     return <MusicNoteIcon className="text-[#161c22] gravity" />
   } else {
     return (
-      <img className="rounded hidden md:block"
+      <img className="rounded w-xl h-xl"
         src={url} alt="Album Pic">
       </img>
 
@@ -87,11 +87,12 @@ const Player = () => {
 
       <div className="grid grid-cols-2 place-content-evenly">
 
-        <div className="grid-cols-1">
+        <div className="grid-cols-1 md:block">
           <PlayerImage url={data?.imageUrl} />
         </div>
 
-        <div className="grid grid-cols-1 place-content-evently m-4 ml-8">
+        <div className="grid grid-cols-1 place-content-between m-4 ml-8 mb-8">
+
           <div className="flex flex-col">
             <div className="flex flex-row justify-between">
               <h3 className="mt-6 text-2xl text-gray-200 font-medium">{data?.song}</h3>
@@ -109,9 +110,11 @@ const Player = () => {
               {data?.composer && <p className="indent-1.5 text-sm text-grey mt-1">{data?.composer}</p>}
             </div>
           </div>
-          <div className="place-self-center mt-8">
+
+          <div className="place-self-center mt-8 pt-16">
             <PlayPause audio={audio} />
           </div>
+
           <div className="content-bottom relative pt-1">
             <input
               className="form-range accent-red-400 appearance-none w-full h-1 p-0  focus:outline-none focus:ring-0 focus:shadow-none shadow-slate-50 bg-gray-500 rounded-full"
@@ -119,6 +122,7 @@ const Player = () => {
               id="vol-control" type="range" min="0" max="100" step="1">
             </input>
           </div>
+
         </div>
       </div>
     </div>

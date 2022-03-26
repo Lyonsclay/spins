@@ -20,7 +20,7 @@ const Home = () => {
         <meta name="description" content="A better way to spin." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col p-0 max-w-4xl">
+      <main className="flex flex-col p-0 mt-8 max-w-4xl">
         <div className="bg-[#161c22]">
           <Player />
         </div>
