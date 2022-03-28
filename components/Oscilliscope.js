@@ -36,20 +36,20 @@ const Oscilliscope = ({ analyser, ...props }) => {
       // requestAnimationFrame(draw);
       animationFrameId = window.requestAnimationFrame(draw)
       var bufferLength = analyser.frequencyBinCount;
-      // var dataArray = new Uint8Array(bufferLength);
-      var dataArray = new Float32Array(bufferLength);
+      var dataArray = new Uint8Array(bufferLength);
+      // var dataArray = new Float32Array(bufferLength);
 
 
-      analyser.getFloatTimeDomainData(dataArray);
-      // analyser.getByteFrequencyData(dataArray)
+      // analyser.getFloatTimeDomainData(dataArray);
+      analyser.getByteFrequencyData(dataArray)
       
-      if (!dataArray.every(x => x === 0)) console.log(dataArray)
+      // if (!dataArray.every(x => x === 0)) console.log({ary:dataArray.slice(0,40)})
 
-      canvasCtx.fillStyle = "rgb(200, 800, 200)";
+      // canvasCtx.fillStyle = "rgb(200, 800, 200)";
       canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
       canvasCtx.lineWidth = 2;
-      canvasCtx.strokeStyle = "rgb(0, 0, 0)";
+      canvasCtx.strokeStyle = "rgb(0, 200, 0)";
 
       canvasCtx.beginPath();
 

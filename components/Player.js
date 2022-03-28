@@ -84,11 +84,13 @@ const Player = () => {
     // const audioElement = new Audio(url)
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     var newAnalyser = audioCtx.createAnalyser();
-    var newAudio = new Audio(url)
-    newAudio?.addEventListener("canplay", function() {
-      var source = audioCtx.createMediaElementSource(newAudio);
-      // var source = audioCtx.createMediaElementSource(audio);
-      source.connect(newAnalyser);
+    // var newAudio = new Audio(url)
+    audio?.addEventListener("canplay", function() {
+      // var source = audioCtx.createMediaElementSource(newAudio);
+      var source = audioCtx.createMediaElementSource(audio);
+      var gainNode = audioCtx.createGain()
+      source.connect(gainNode);
+      gainNode.connect(newAnalyser);
       newAnalyser.connect(audioCtx.destination)
 
       // const aud = new Audio(url);
@@ -103,7 +105,6 @@ const Player = () => {
       // Feed the HTMLMediaElement into it
 
       // var audioCtx = new AudioContext();
-
       // newAnalyser.fftSize = 2048;
       // newAnalyser.minDecibels = -90;
       // newAnalyser.maxDecibels = -10;
