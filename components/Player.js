@@ -1,7 +1,12 @@
 import React, {
   useEffect,
-  useState
+  useState,
+  useRef
 } from 'react'
+import dynamic from 'next/dynamic'
+import Oscilliscope from './Oscilliscope'
+
+
 import { HeartIcon, PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
 import useSWR from 'swr'
 
@@ -33,6 +38,8 @@ const PlayPause = ({ audio }) => {
     play ? audio.pause() : audio.play()
     setPlay(!play)
   }
+  // const togglePlay = () => Promise.resolve(playPause).then(() => setPlay(!play))
+  if (typeof audio.play !== "function") return <span>Web audio not ready!</span>
   return (
     <button onClick={togglePlay}>
       {audio && (play ?
@@ -46,7 +53,7 @@ const PlayPause = ({ audio }) => {
 const PlayerImage = ({ url }) => {
   const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
   if (url == defaultImage) {
-    return <MusicNoteIcon className="text-[#161c22] gravity" />
+    return <MusicNoteIcon className="text-[#161c22] gravity lg:w-[445px] lg:h-[445px]" />
   } else {
     return (
       <img className="rounded w-xl h-xl"
@@ -62,17 +69,86 @@ const Player = () => {
   const { data, error } = useSWR('/api/spins', fetcher)
   const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
   const [audio, setAudio] = useState()
+  // const audio = window && new window?.Audio(url)
+
+  // const audioRef = useRef()
 
 
+  const [analyser, setAnalyser] = useState([])
   useEffect(() => {
-    const audio = new Audio( url );
-    // const stream = audio.captureStream()
-    // audio.captureStream()
-    setAudio(audio)
-  }, [audio?.play])
+    const newAudio = new Audio(url)
+    newAudio.crossOrigin = "anonymous"
+    setAudio(newAudio)
+  }, [])
+  useEffect(() => {
+    // const audioElement = new Audio(url)
+    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    var newAnalyser = audioCtx.createAnalyser();
+    var newAudio = new Audio(url)
+    newAudio?.addEventListener("canplay", function() {
+      var source = audioCtx.createMediaElementSource(newAudio);
+      // var source = audioCtx.createMediaElementSource(audio);
+      source.connect(newAnalyser);
+      newAnalyser.connect(audioCtx.destination)
+
+      // const aud = new Audio(url);
+      // aud.;
+
+      // navigator.mediaDevices.getUserMedia({ audio: true })
+      // .then(function(stream) {
+      // video.srcObject = stream;
 
 
-  if (!(typeof audio?.play === 'function')) return <div>Loading Audio...</div>
+      // Create a MediaStreamAudioSourceNode
+      // Feed the HTMLMediaElement into it
+
+      // var audioCtx = new AudioContext();
+
+      // newAnalyser.fftSize = 2048;
+      // newAnalyser.minDecibels = -90;
+      // newAnalyser.maxDecibels = -10;
+      // newAnalyser.smoothingTimeConstant = 0.85;
+      console.log({ newAnalyser })
+      setAnalyser(newAnalyser)
+      // var source = audioCtx.createMediaStreamSource(aud);
+
+      // Create a biquadfilter
+      // var biquadFilter = audioCtx.createBiquadFilter();
+      // biquadFilter.type = "lowshelf";
+      // biquadFilter.frequency.value = 1000;
+      // biquadFilter.gain.value = range.value;
+      // biquadFilter.gain.value = 1000
+
+      // connect the AudioBufferSourceNode to the gainNode
+      // and the gainNode to the destination, so we can play the
+      // music and adjust the volume using the mouse cursor
+      // biquadFilter.connect(audioCtx.destination);
+      // source.connect(biquadFilter);
+      // source.connect(audioCtx.destination)
+
+      // Get new mouse pointer coordinates when mouse is moved
+      // then set new gain value
+
+      // range.oninput = function() {
+      //     biquadFilter.gain.value = range.value;
+      // }
+      // })
+      // .catch(function(err) {
+      //   console.log('The following gUM error occurred: ' + err);
+      // });
+
+
+      // return dataArray
+
+      // setDataArray(ary)
+
+      // const newAud = new Audio(url);
+
+    });
+  }, [audio, analyser])
+
+
+  // if (!(typeof audioRef?.play === 'function')) return <div>Loading Audio...</div>
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
   const volume = (e) => {
@@ -110,9 +186,12 @@ const Player = () => {
               {data?.composer && <p className="indent-1.5 text-sm text-grey mt-1">{data?.composer}</p>}
             </div>
           </div>
+          <Oscilliscope analyser={analyser} />
 
           <div className="place-self-center mt-8 pt-16">
+            {analyser?.getByteFrequencyData && audio?.play && 
             <PlayPause audio={audio} />
+}
           </div>
 
           <div className="content-bottom relative pt-1">
