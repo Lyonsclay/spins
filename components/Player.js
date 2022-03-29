@@ -32,14 +32,25 @@ const Pause = () => (
   </svg>
 )
 
-const PlayPause = ({ audio }) => {
+const PlayPause = ({ audio, init }) => {
   const [play, setPlay] = useState(false)
   const togglePlay = () => {
-    play ? audio.pause() : audio.play()
+    if (typeof audio.play !== "function") return init()
+    const promise = play ? audio.pause() : audio.play()
+    if (promise !== undefined) {
+      promise.then(_ => {
+        // Autoplay started!
+        console.log("Play Pause you choose!!")
+      }).catch(error => {
+        console.log({ error })
+        // Autoplay was prevented.
+        // Show a "Play" button so that user can start playback.
+      });
+    }
     setPlay(!play)
   }
   // const togglePlay = () => Promise.resolve(playPause).then(() => setPlay(!play))
-  if (typeof audio.play !== "function") return <span>Web audio not ready!</span>
+  // if (typeof audio.play !== "function") return <span>Web audio not ready!</span>
   return (
     <button onClick={togglePlay}>
       {audio && (play ?
@@ -68,24 +79,26 @@ const Player = () => {
 
   const { data, error } = useSWR('/api/spins', fetcher)
   const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
-  const [audio, setAudio] = useState()
+  const [audio, setAudio] = useState({})
   // const audio = window && new window?.Audio(url)
 
   // const audioRef = useRef()
 
 
   const [analyser, setAnalyser] = useState([])
-  useEffect(() => {
+  const initAudio = () => {
+    if (typeof audio?.play === "function") return
     const newAudio = new Audio(url)
     newAudio.crossOrigin = "anonymous"
     setAudio(newAudio)
-  }, [])
+  }
   useEffect(() => {
     // const audioElement = new Audio(url)
-    var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    var newAnalyser = audioCtx.createAnalyser();
+
     // var newAudio = new Audio(url)
-    audio?.addEventListener("canplay", function() {
+ (typeof audio?.addEventListener === "function") &&   audio?.addEventListener("canplay", function() {
+      var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var newAnalyser = audioCtx.createAnalyser();
       // var source = audioCtx.createMediaElementSource(newAudio);
       var source = audioCtx.createMediaElementSource(audio);
       var gainNode = audioCtx.createGain()
@@ -187,12 +200,13 @@ const Player = () => {
               {data?.composer && <p className="indent-1.5 text-sm text-grey mt-1">{data?.composer}</p>}
             </div>
           </div>
-          <Oscilliscope analyser={analyser} />
-
+          <div className="flex flex-col border border-solid border-black">
+            {analyser?.getByteFrequencyData && audio?.play &&
+              <Oscilliscope className="h-32" analyser={analyser} />
+            }
+          </div>
           <div className="place-self-center mt-8 pt-16">
-            {analyser?.getByteFrequencyData && audio?.play && 
-            <PlayPause audio={audio} />
-}
+            <PlayPause audio={audio} init={initAudio} />
           </div>
 
           <div className="content-bottom relative pt-1">

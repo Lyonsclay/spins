@@ -19,7 +19,15 @@ const Oscilliscope = ({ analyser, ...props }) => {
 
   // const { draw, ...rest } = props
   const canvasRef = useRef(null)
+  const [dataArray, setDataArray] = useState()
 
+  useEffect(() => {
+      analyser.fftSize = 2048;
+      var bufferLength = analyser.fftSize;
+    // var bufferLength = analyser.frequencyBinCount;
+    var ary = new Uint8Array(bufferLength);
+    setDataArray(ary)
+  }, [])
   useEffect(() => {
     // setDataArray(getAnalyser())
 
@@ -29,29 +37,37 @@ const Oscilliscope = ({ analyser, ...props }) => {
     let frameCount = 0
     let animationFrameId
 
+
     const draw = () => {
+      if (!dataArray) return
+      var bufferLength = analyser.frequencyBinCount;
       frameCount++
 
       // draw(context, canvas, frameCount)
       // requestAnimationFrame(draw);
       animationFrameId = window.requestAnimationFrame(draw)
-      var bufferLength = analyser.frequencyBinCount;
-      var dataArray = new Uint8Array(bufferLength);
+
       // var dataArray = new Float32Array(bufferLength);
 
 
       // analyser.getFloatTimeDomainData(dataArray);
       analyser.getByteFrequencyData(dataArray)
-      
+
       // if (!dataArray.every(x => x === 0)) console.log({ary:dataArray.slice(0,40)})
 
-      // canvasCtx.fillStyle = "rgb(200, 800, 200)";
+
+
+
+      canvasCtx.fillStyle = "#161c22";
+      // canvasCtx.fillStyle = "rgb(100, 100, 200)";
       canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
 
       canvasCtx.lineWidth = 2;
-      canvasCtx.strokeStyle = "rgb(0, 200, 0)";
+      canvasCtx.strokeStyle = "rgb(0, 200, 50)";
 
       canvasCtx.beginPath();
+      // canvasCtx.moveTo(0, canvas.height / 2);
+      // canvasCtx.lineTo(canvas.width, canvas.height / 2);
 
       // var bufferLength = 2048
       var sliceWidth = canvas.width * 1.0 / bufferLength;
@@ -60,7 +76,7 @@ const Oscilliscope = ({ analyser, ...props }) => {
       for (var i = 0; i < bufferLength; i++) {
 
         var v = dataArray[i] / 128.0;
-        var y = v * canvas.height / 2;
+        var y = (v * canvas.height ) + 64.0
 
         if (i === 0) {
           canvasCtx.moveTo(x, y);
@@ -71,7 +87,7 @@ const Oscilliscope = ({ analyser, ...props }) => {
         x += sliceWidth;
       }
 
-      canvasCtx.lineTo(canvas.width, canvas.height / 2);
+      // canvasCtx.lineTo(canvas.width, canvas.height / 2);
       canvasCtx.stroke();
 
     }
@@ -80,15 +96,15 @@ const Oscilliscope = ({ analyser, ...props }) => {
     return () => {
       window.cancelAnimationFrame(animationFrameId)
     }
-  }, [canvasRef])
-  
+  }, [canvasRef,dataArray])
 
-  return <canvas ref={canvasRef} {...props} />
+
+  return <canvas className="h-48"ref={canvasRef} {...props} />
 }
 
-const App = ({...props}) => {
+const App = ({ ...props }) => {
   if (typeof props.analyser.getFloatTimeDomainData !== "function") return <span>Loading Oscilliscope</span>
-  return <Oscilliscope {...props}/>
+  return <Oscilliscope {...props} />
 }
 
-export default App
+export default Oscilliscope
