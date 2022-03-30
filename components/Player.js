@@ -166,7 +166,6 @@ const Player = () => {
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
   const volume = (e) => {
-    console.log({volume: e.target.value})
     if (audio?.volume && e.target.value > 0) {
       audio.volume = e.target.value / 100
     }
