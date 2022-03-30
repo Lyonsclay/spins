@@ -166,7 +166,8 @@ const Player = () => {
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
   const volume = (e) => {
-    if (audio?.volume) {
+    console.log({volume: e.target.value})
+    if (audio?.volume && e.target.value > 0) {
       audio.volume = e.target.value / 100
     }
     // setAudio(audio)
@@ -183,7 +184,7 @@ const Player = () => {
 
         <div className="grid grid-cols-1 place-content-between m-4 ml-8 mb-8">
 
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-8">
             <div className="flex flex-row justify-between">
               <h3 className="mt-6 text-2xl text-gray-200 font-medium">{data?.song}</h3>
               <div className="text-red-500">
@@ -200,12 +201,13 @@ const Player = () => {
               {data?.composer && <p className="indent-1.5 text-sm text-grey mt-1">{data?.composer}</p>}
             </div>
           </div>
-          <div className="flex flex-col border border-solid border-black">
-            {analyser?.getByteFrequencyData && audio?.play &&
+          <div className="flex flex-col">
+            {analyser?.getByteFrequencyData && audio?.play ?
               <Oscilliscope className="h-32" analyser={analyser} />
+             : <div className="h-32"/>
             }
           </div>
-          <div className="place-self-center mt-8 pt-16">
+          <div className="place-self-center pt-8">
             <PlayPause audio={audio} init={initAudio} />
           </div>
 

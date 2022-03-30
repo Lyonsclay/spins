@@ -66,10 +66,10 @@ const Slot = ({ title, text, start, end, url }) => {
       <td className="w-1/3 text-center">
         {view == "loading" ?
          <button onClick={cancel}>
-          <span class="flex flex-row justify-center">
-            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
-            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
-            <span class="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+          <span className="flex flex-row justify-center">
+            <span className="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+            <span className="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
+            <span className="animate-ping  h-3 w-4 rounded-full bg-sky-400 opacity-75"></span>
           </span>
          </button>
           :
