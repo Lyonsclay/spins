@@ -106,18 +106,6 @@ const Player = () => {
       gainNode.connect(newAnalyser);
       newAnalyser.connect(audioCtx.destination)
 
-      // const aud = new Audio(url);
-      // aud.;
-
-      // navigator.mediaDevices.getUserMedia({ audio: true })
-      // .then(function(stream) {
-      // video.srcObject = stream;
-
-
-      // Create a MediaStreamAudioSourceNode
-      // Feed the HTMLMediaElement into it
-
-      // var audioCtx = new AudioContext();
       // newAnalyser.fftSize = 2048;
       // newAnalyser.minDecibels = -90;
       // newAnalyser.maxDecibels = -10;

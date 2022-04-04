@@ -6,13 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vdev": "vercel dev"
+    "vdev": "vercel dev",
+    "clean": "rm -rf .vercel/cache .next/cache"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.5",
-    "hls.js": "^1.1.5",
+    "http-proxy-middleware": "^2.0.4",
     "next": "12.1.0",
-    "openplayerjs": "^2.10.0",
+    "next-http-proxy-middleware": "^1.2.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "swr": "^1.2.2",
