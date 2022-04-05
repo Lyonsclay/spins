@@ -33,9 +33,12 @@ const Pause = () => (
 )
 
 const PlayPause = ({ audio, init }) => {
-  const [play, setPlay] = useState(false)
+  const [play, setPlay] = useState("music-note")
   const togglePlay = () => {
-    if (typeof audio.play !== "function") return init()
+    if (typeof audio.play !== "function") {
+      setPlay(false)
+      return init()
+    }
     const promise = play ? audio.pause() : audio.play()
     if (promise !== undefined) {
       promise.then(_ => {
@@ -49,13 +52,14 @@ const PlayPause = ({ audio, init }) => {
     }
     setPlay(!play)
   }
+  const start = play === "music-note"
   // const togglePlay = () => Promise.resolve(playPause).then(() => setPlay(!play))
   // if (typeof audio.play !== "function") return <span>Web audio not ready!</span>
   return (
     <button onClick={togglePlay}>
-      {audio && (play ?
+      {audio && !start && (play ?
         <PauseIcon className="fill-red-500 w-14 h-14" />
-        : <PlayIcon className="text-red-500  w-14 h-14" />)}
+        : <PlayIcon className="text-red-500  w-14 h-14" />) || <MusicNoteIcon className="fill-red-500 w-14 h-14"/>}
     </button>
   )
 
@@ -63,7 +67,7 @@ const PlayPause = ({ audio, init }) => {
 
 const PlayerImage = ({ url }) => {
   const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
-  if (url == defaultImage) {
+  if (!url || url == defaultImage) {
     return <MusicNoteIcon className="text-[#161c22] gravity lg:w-[445px] lg:h-[445px]" />
   } else {
     return (
@@ -76,16 +80,10 @@ const PlayerImage = ({ url }) => {
 }
 
 const Player = () => {
-
   const { data, error } = useSWR('/api/spins', fetcher)
-  // const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
   const url = "https://api-spinning.herokuapp.com/"
   const [audio, setAudio] = useState({})
-  // const audio = window && new window?.Audio(url)
-
   // const audioRef = useRef()
-
-
   const [analyser, setAnalyser] = useState([])
   const initAudio = () => {
     if (typeof audio?.play === "function") return
@@ -94,72 +92,27 @@ const Player = () => {
     setAudio(newAudio)
   }
   useEffect(() => {
-    // const audioElement = new Audio(url)
-
-    // var newAudio = new Audio(url)
- (typeof audio?.addEventListener === "function") &&   audio?.addEventListener("canplay", function() {
-      var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-      var newAnalyser = audioCtx.createAnalyser();
-      // var source = audioCtx.createMediaElementSource(newAudio);
-      var source = audioCtx.createMediaElementSource(audio);
-      var gainNode = audioCtx.createGain()
+    (typeof audio?.addEventListener === "function") && audio?.addEventListener("canplay", function() {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const newAnalyser = audioCtx.createAnalyser();
+      const source = audioCtx.createMediaElementSource(audio);
+      const gainNode = audioCtx.createGain()
       source.connect(gainNode);
       gainNode.connect(newAnalyser);
       newAnalyser.connect(audioCtx.destination)
-
       // newAnalyser.fftSize = 2048;
       // newAnalyser.minDecibels = -90;
       // newAnalyser.maxDecibels = -10;
       // newAnalyser.smoothingTimeConstant = 0.85;
-      console.log({ newAnalyser })
       setAnalyser(newAnalyser)
-      // var source = audioCtx.createMediaStreamSource(aud);
-
-      // Create a biquadfilter
-      // var biquadFilter = audioCtx.createBiquadFilter();
-      // biquadFilter.type = "lowshelf";
-      // biquadFilter.frequency.value = 1000;
-      // biquadFilter.gain.value = range.value;
-      // biquadFilter.gain.value = 1000
-
-      // connect the AudioBufferSourceNode to the gainNode
-      // and the gainNode to the destination, so we can play the
-      // music and adjust the volume using the mouse cursor
-      // biquadFilter.connect(audioCtx.destination);
-      // source.connect(biquadFilter);
-      // source.connect(audioCtx.destination)
-
-      // Get new mouse pointer coordinates when mouse is moved
-      // then set new gain value
-
-      // range.oninput = function() {
-      //     biquadFilter.gain.value = range.value;
-      // }
-      // })
-      // .catch(function(err) {
-      //   console.log('The following gUM error occurred: ' + err);
-      // });
-
-
-      // return dataArray
-
-      // setDataArray(ary)
-
-      // const newAud = new Audio(url);
-
     });
   }, [audio, analyser])
-
-
-  // if (!(typeof audioRef?.play === 'function')) return <div>Loading Audio...</div>
-  if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
+  // if (error) return <div className="text-slate-100">Failed to load {JSON.stringify(error)}</div>
+  // if (!data) return <div>Loading...</div>
   const volume = (e) => {
     if (audio?.volume && e.target.value > 0) {
       audio.volume = e.target.value / 100
     }
-    // setAudio(audio)
-    // console.log({ volume: e.target.value })
   }
   return (
     <div className="border-solid border border-slate-600  rounded shadow-lg pt-0 pr-1 max-width-8" >
@@ -192,7 +145,7 @@ const Player = () => {
           <div className="flex flex-col">
             {analyser?.getByteFrequencyData && audio?.play ?
               <Oscilliscope className="h-32" analyser={analyser} />
-             : <div className="h-32"/>
+              : <div className="h-32" />
             }
           </div>
           <div className="place-self-center pt-8">
