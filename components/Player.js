@@ -78,7 +78,8 @@ const PlayerImage = ({ url }) => {
 const Player = () => {
 
   const { data, error } = useSWR('/api/spins', fetcher)
-  const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
+  // const url = "http://s7.viastreaming.net:8310/;?_=0.494499115526442"
+  const url = "https://api-spinning.herokuapp.com/"
   const [audio, setAudio] = useState({})
   // const audio = window && new window?.Audio(url)
 
