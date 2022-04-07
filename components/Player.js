@@ -157,7 +157,7 @@ const Player = () => {
 
           <div className="content-bottom relative">
               <input
-                className="form-range accent-red-400 w-full h-1 focus:outline-none focus:ring-0 focus:shadow-none rounded-full"
+                className="form-range accent-red-500 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none w-full h-1 rounded-full"
                 onChange={volume}
                 id="vol-control" type="range" min="0" max="100" step="1">
               </input>
