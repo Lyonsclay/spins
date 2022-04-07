@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="min-h-screen flex flex-col items-center bg-[#0d1118]">
       <Head>
-        <title>Spinitron Clone</title>
+        <title>Now Spinning</title>
         <meta name="description" content="A better way to spin." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

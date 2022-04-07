@@ -8,6 +8,7 @@ import Oscilliscope from './Oscilliscope'
 
 
 import { HeartIcon, PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
+import { HeartIcon as ArtIcon }  from '@heroicons/react/outline'
 import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -58,8 +59,10 @@ const PlayPause = ({ audio, init }) => {
   return (
     <button onClick={togglePlay}>
       {audio && !start && (play ?
-        <PauseIcon className="fill-red-500 w-14 h-14" />
-        : <PlayIcon className="text-red-500  w-14 h-14" />) || <MusicNoteIcon className="fill-red-500 w-14 h-14"/>}
+        <PauseIcon className="fill-red-500 w-10 h-14" />
+        : <PlayIcon className="text-red-500  w-10 h-14" />) ||
+       <div className="gravity rounded-full w-10 h-10">
+       <MusicNoteIcon className="text-[#161c22] w-8 h-8 pl-2 pt-2" /></div>}
     </button>
   )
 
@@ -68,7 +71,7 @@ const PlayPause = ({ audio, init }) => {
 const PlayerImage = ({ url }) => {
   const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
   if (!url || url == defaultImage) {
-    return <MusicNoteIcon className="text-[#161c22] gravity lg:w-[445px] lg:h-[445px]" />
+    return <MusicNoteIcon className=" gravity lg:w-[445px] lg:h-[445px]" />
   } else {
     return (
       <img className="rounded w-xl h-xl"
@@ -83,7 +86,7 @@ const Player = () => {
   const { data, error } = useSWR('/api/spins', fetcher)
   const url = process.env.NODE_ENV === "production" ? "https://api-spinning.herokuapp.com/" : "http://s7.viastreaming.net:8310/;?=0.494499115526442"
   const [audio, setAudio] = useState({})
-  // const audioRef = useRef()
+  const sliderRef = useRef()
   const [analyser, setAnalyser] = useState([])
   const initAudio = () => {
     if (typeof audio?.play === "function") return
@@ -129,7 +132,7 @@ const Player = () => {
             <div className="flex flex-row justify-between">
               <h3 className="mt-6 text-2xl text-gray-200 font-medium">{data?.song}</h3>
               <div className="text-red-500">
-                <HeartIcon className="text-red-500  w-8 h-8" />
+                <ArtIcon className="text-red-500  w-8 h-8" />
               </div>
             </div >
             <div className="max-w-md">
@@ -148,16 +151,16 @@ const Player = () => {
               : <div className="h-32" />
             }
           </div>
-          <div className="place-self-center pt-8">
+          <div className="place-self-center">
             <PlayPause audio={audio} init={initAudio} />
           </div>
 
-          <div className="content-bottom relative pt-1">
-            <input
-              className="form-range accent-red-400 appearance-none w-full h-1 p-0  focus:outline-none focus:ring-0 focus:shadow-none shadow-slate-50 bg-gray-500 rounded-full"
-              onChange={volume}
-              id="vol-control" type="range" min="0" max="100" step="1">
-            </input>
+          <div className="content-bottom relative">
+              <input
+                className="form-range accent-red-400 w-full h-1 focus:outline-none focus:ring-0 focus:shadow-none rounded-full"
+                onChange={volume}
+                id="vol-control" type="range" min="0" max="100" step="1">
+              </input>
           </div>
 
         </div>

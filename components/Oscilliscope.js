@@ -122,7 +122,7 @@ const Oscilliscope = ({ analyser, ...props }) => {
   }, [canvasRef, dataArray])
 
 
-  return <canvas className="h-48" ref={canvasRef} {...props} />
+  return <canvas className="h-32" ref={canvasRef} {...props} />
 }
 
 export default Oscilliscope
