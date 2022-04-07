@@ -22,8 +22,9 @@ const Oscilliscope = ({ analyser, ...props }) => {
   const [dataArray, setDataArray] = useState()
 
   useEffect(() => {
-      // analyser.fftSize = 2048;
-      // var bufferLength = analyser.fftSize;
+    console.log({analyser})
+    // analyser.fftSize = 2048;
+    // var bufferLength = analyser.fftSize;
     var bufferLength = analyser.frequencyBinCount;
     var ary = new Uint8Array(bufferLength);
     setDataArray(ary)
@@ -38,21 +39,30 @@ const Oscilliscope = ({ analyser, ...props }) => {
     let frameCount = 0
     let animationFrameId
 
+    if (!dataArray) return
 
     const draw = () => {
-      if (!dataArray) return
       var bufferLength = analyser.frequencyBinCount;
       frameCount++
 
       // draw(context, canvas, frameCount)
       // requestAnimationFrame(draw);
-      animationFrameId = window.requestAnimationFrame(draw)
+      window.requestAnimFrame = (function() {
+        return window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          function(callback, element) {
+            window.setTimeout(callback, 1000 / 60);
+          };
+      })();
+      animationFrameId = window.requestAnimFrame(draw)
 
       // var dataArray = new Float32Array(bufferLength);
 
 
       // analyser.getFloatTimeDomainData(dataArray);
-      analyser.getByteFrequencyData(dataArray)
+
+
 
       // if (!dataArray.every(x => x === 0)) console.log({ary:dataArray.slice(0,40)})
 
@@ -77,7 +87,7 @@ const Oscilliscope = ({ analyser, ...props }) => {
       for (var i = 0; i < bufferLength; i++) {
 
         var v = dataArray[i] / 118.0;
-        var y = -0.72 * (v * canvas.height )/ Math.log2(6.5/v) + canvas.height
+        var y = -0.72 * (v * canvas.height) / Math.log2(6.5 / v) + canvas.height
 
 
         if (dataArray[i] === 0) {
@@ -92,21 +102,27 @@ const Oscilliscope = ({ analyser, ...props }) => {
       // canvasCtx.lineTo(canvas.width, canvas.height / 2);
       canvasCtx.stroke();
 
+    analyser.getByteFrequencyData(dataArray)
     }
     draw()
 
     return () => {
-      window.cancelAnimationFrame(animationFrameId)
+      window.cancelAnimFrame = (function() {
+        return window.cancelAnimationFrame ||
+          window.webkitCancelAnimationFrame ||
+          window.mozCancelAnimationFrame ||
+          function(callback, element) {
+            window.setTimeout(callback, 1000 / 60);
+          };
+      })();
+
+
+      window.cancelAnimFrame(animationFrameId)
     }
-  }, [canvasRef,dataArray])
+  }, [canvasRef, dataArray])
 
 
-  return <canvas className="h-48"ref={canvasRef} {...props} />
-}
-
-const App = ({ ...props }) => {
-  if (typeof props.analyser.getFloatTimeDomainData !== "function") return <span>Loading Oscilliscope</span>
-  return <Oscilliscope {...props} />
+  return <canvas className="h-48" ref={canvasRef} {...props} />
 }
 
 export default Oscilliscope
