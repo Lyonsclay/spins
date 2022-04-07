@@ -81,7 +81,7 @@ const PlayerImage = ({ url }) => {
 
 const Player = () => {
   const { data, error } = useSWR('/api/spins', fetcher)
-  const url = "https://api-spinning.herokuapp.com/"
+  const url = process.env.NODE_ENV === "production" ? "https://api-spinning.herokuapp.com/" : "http://s7.viastreaming.net:8310/;?=0.494499115526442"
   const [audio, setAudio] = useState({})
   // const audioRef = useRef()
   const [analyser, setAnalyser] = useState([])
