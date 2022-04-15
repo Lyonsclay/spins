@@ -22,7 +22,6 @@ const Oscilliscope = ({ analyser, ...props }) => {
   const [dataArray, setDataArray] = useState()
 
   useEffect(() => {
-    console.log({analyser})
     // analyser.fftSize = 2048;
     // var bufferLength = analyser.fftSize;
     var bufferLength = analyser.frequencyBinCount;
@@ -56,26 +55,13 @@ const Oscilliscope = ({ analyser, ...props }) => {
           };
       })();
       animationFrameId = window.requestAnimFrame(draw)
-
       // var dataArray = new Float32Array(bufferLength);
-
-
       // analyser.getFloatTimeDomainData(dataArray);
-
-
-
-      // if (!dataArray.every(x => x === 0)) console.log({ary:dataArray.slice(0,40)})
-
-
-
-
-
       canvasCtx.fillStyle = "#161c22";
       // canvasCtx.fillStyle = "rgb(100, 100, 200)";
       canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
       canvasCtx.lineWidth = 2;
       canvasCtx.strokeStyle = "rgb(180, 200, 50)";
-
       canvasCtx.beginPath();
       // canvasCtx.moveTo(0, canvas.height / 2);
       // canvasCtx.lineTo(canvas.width, canvas.height / 2);

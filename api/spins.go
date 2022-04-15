@@ -1,4 +1,4 @@
-package spinitron
+package spins
 
 import (
 	"encoding/json"
@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"time"
 	"strings"
+	"os"
 )
 
 
@@ -22,7 +23,8 @@ type Spin struct {
 }
 
 func GetCurrentSpin() string {
-	res, err := soup.Get("https://spinitron.com/WXOX/")
+	url := os.Getenv("SPINS_URL")
+	res, err := soup.Get(url)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -5,8 +5,6 @@ import React, {
   useEffect,
   useState,
 } from 'react'
-// import Hls from "hls.js"
-// "https://tailwindcss.com/img/card-top.jpg"
 import useSWR from 'swr'
 import { PlayIcon, PauseIcon } from '@heroicons/react/solid'
 import Player from '../components/Player'
@@ -35,15 +33,3 @@ const Home = () => {
 }
 
 export default Home
-
-  // useEffect(() => {
-  //   const audio = player;
-  //   const hls = new Hls();
-  //   // const url = 'https://ark3.spinitron.com/ark2/WXOX-20220220T190000Z/index.m3u8'
-  //   const url = 'https://ark3.spinitron.com/ark2/WXOX-20220221T120000Z/index.m3u8'
-
-  //   hls.loadSource(url);
-  //   hls.attachMedia(audio);
-  //   hls.on(Hls.Events.MANIFEST_PARSED, function() { audio.play(); });
-
-  // }, [player]);

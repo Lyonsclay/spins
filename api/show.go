@@ -1,4 +1,4 @@
-package spinitron
+package spins
 
 import (
 	"encoding/json"
@@ -24,7 +24,6 @@ func GetShow(path string) string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//We Read the response body on the line below.
 	doc := soup.HTMLParse(res)
 
 	body := doc.Find("body")

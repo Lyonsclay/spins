@@ -1,4 +1,4 @@
-package spinitron
+package spins
 
 import (
 	"encoding/json"
@@ -7,20 +7,8 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"os"
 )
-
-// {"id":15375164,
-// 	"title":"4 To The Floor",
-// 	"text":"wildbill",
-// 	"start":"2022-02-18T20:00:00-0500",
-// 	"end":"2022-02-18T22:00:00-0500",
-// 	"className":"spin-cal-pl automated category-music",
-// 	"url":"/WXOX/pl/15375164/4-To-The-Floor",
-// 	"editUrl":"/m/playlist/edit/15375164",
-// 	"deleteUrl":null,
-// 	"rebroadcastUrl":"/m/playlist/create?playlist_id=15375164",
-// 	"retireUrl":"",
-// 	"editable":false,"data":{"category":"Music"}}
 
 type Slot struct {
 	Id    int    `json:"id"`
@@ -49,8 +37,8 @@ func reverseSlice(s []Slot) []Slot {
 }
 
 func GetCalendar() string {
-	// base := "https://spinitron.com/WXOX"
-	url := "https://spinitron.com/WXOX/calendar-feed"
+	path := "calendar-feed"
+	url := os.Getenv("SPINS_URL") + path
 	q := getTimeRange()
 	res, err := http.Get(url + q)
 	if err != nil {

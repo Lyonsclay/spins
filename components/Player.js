@@ -42,10 +42,7 @@ const PlayPause = ({ audio, init }) => {
     }
     const promise = play ? audio.pause() : audio.play()
     if (promise !== undefined) {
-      promise.then(_ => {
-        // Autoplay started!
-        console.log("Play Pause you choose!!")
-      }).catch(error => {
+      promise.catch(error => {
         console.log({ error })
         // Autoplay was prevented.
         // Show a "Play" button so that user can start playback.
@@ -69,7 +66,7 @@ const PlayPause = ({ audio, init }) => {
 }
 
 const PlayerImage = ({ url }) => {
-  const defaultImage = "https://spinitron.com/static/pictures/placeholders/loudspeaker.svg"
+  const defaultImage = process.env.NEXT_PUBLIC_SPINS_DEFAULT_IMAGE
   if (!url || url == defaultImage) {
     return <MusicNoteIcon className=" gravity lg:w-[445px] lg:h-[445px]" />
   } else {

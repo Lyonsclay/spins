@@ -1,16 +1,17 @@
-package spinitron
+package spins
 
 import (
 	"fmt"
 	"github.com/anaskhan96/soup"
 	"log"
-	"net/url"
 	"testing"
 	"time"
+	"os"
 )
 
-func TestSpinitronParse(t *testing.T) {
-	res, err := soup.Get("https://spinitron.com/wxox/")
+func TestSpinsParse(t *testing.T) {
+	url := os.Getenv("NEXT_PUBLIC_SPINS_URL")
+	res, err := soup.Get(url)
 	doc := soup.HTMLParse(res)
 	body := doc.Find("body")
 	// rows := doc.Find("table").FindAll("tr")
@@ -23,13 +24,13 @@ func TestSpinitronParse(t *testing.T) {
 }
 
 func TestPlayListParse(t *testing.T) {
-	u := "https://spinitron.com/WXOX/pl/15375723/Mythic-Beat"
+	path := "pl/15375723/Mythic-Beat"
+	u := os.Getenv("SPINS_URL") +path
 	res, err := soup.Get(u)
 	if err != nil {
 		log.Fatal(err)
 	}
 	doc := soup.HTMLParse(res)
-
 	body := doc.Find("body")
 	playlist := body.Find("div", "class", "playlist")
 	image := playlist.Find("div", "class", "image").Find("img")
@@ -41,7 +42,8 @@ func TestPlayListParse(t *testing.T) {
 }
 
 func TestDescriptionParse(t *testing.T) {
-	u := "https://spinitron.com/WXOX/pl/15375723/Mythic-Beat"
+	path := "pl/15375723/Mythic-Beat"
+	u := os.Getenv("SPINS_URL") +path
 	res, err := soup.Get(u)
 	if err != nil {
 		log.Fatal(err)
@@ -58,20 +60,11 @@ func TestDescriptionParse(t *testing.T) {
 	}
 }
 
-var resources = []string{
-	"https://spinitron.com/WXOX/",
-	"https://spinitron.com/WXOX/dj/103719/Ben-Zoeller",
-	"https://spinitron.com/WXOX/show/222061/World-Workout-w-The-Dream-Team",
-	"https://spinitron.com/WXOX/pl/15396116/Hello-Goodbye",
-	"https://spinitron.com/WXOX/calendar",
-	"https://spinitron.com/WXOX/calendar-feed?timeslot=15&start=2022-02-20T00:00:00&end=2022-02-27T06:59:59&_=1645467101614",
-	"https://spinitron.com/WXOX/calendar-feed?start=2022-02-20T00:00:00&end=2022-02-27T06:59:59",
-	"http://widgets.spinitron.com/widget/now-playing-v2?callback=_spinitron04669496113876874164549461312&station=wxox&num=1&sharing=0&player=0&cover=0",
-}
 
 func TestCalendar(t *testing.T) {
-	cal := resources[6]
-	res, err := soup.Get(cal)
+	path := "calendar-feed?timeslot=15&start=2022-02-20T00:00:00&end=2022-02-27T06:59:59&_=1645467101614"
+	url := os.Getenv("SPINS_URL") + path
+	res, err := soup.Get(url)
 	doc := soup.HTMLParse(res)
 	body := doc.Find("body")
 	output := body.HTML()
@@ -82,7 +75,8 @@ func TestCalendar(t *testing.T) {
 }
 
 func TestGetOneShow(t *testing.T) {
-	u := "https://spinitron.com/WXOX/pl/15379281/Winterlude"
+	path := "pl/15379281/Winterlude"
+	u := os.Getenv("SPINS_URL") + path
 	out := GetShow(u)
 	output := out
 	expected := "out"
@@ -100,20 +94,6 @@ func TestGetCurrentSpin(t *testing.T) {
 	}
 }
 
-func TestParseQuery(t *testing.T) {
-	u := "https://google.com/drivers?one=two"
-	p, err := url.ParseQuery(u)
-	// if err != nil {
-	// 	log.Fatal(err)
-	// }
-	output := p["one"]
-	expected := err
-	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
-		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
-	}
-
-}
-
 func TestGetShows(t *testing.T) {
 	s := GetCalendar()
 	output := s
@@ -123,7 +103,8 @@ func TestGetShows(t *testing.T) {
 	}
 }
 
-func TestTimeOut(t *testing.T) {
+// [TODO] add getTimeRange
+func TestTimeFormat(t *testing.T) {
 	// q := "start=2022-02-20T00:00:00&end=2022-02-27T06:59:59"
 	now := time.Now()
 	st := now.Format("2006-01-02T15:04:05")
@@ -135,26 +116,3 @@ func TestTimeOut(t *testing.T) {
 	}
 }
 
-func TestReverseSlice(t *testing.T) {
-	order := []int{1, 2, 3, 4, 5, 6, 7,8}
-	l := len(order)
-	now := make([]int,8)
-	for i,v := range(order) {
-		now[l - i - 1] = v
-	}
-	output := now
-	expected := "pay"
-	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
-		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
-	}
-}
-
-func TestGetPlaylist(t *testing.T) {
-	path := "https://spinitron.com" + "/WXOX/pl/15610668/Sun-Revolutions"
-	// res := GetPlaylist(path)
-	output := path
-	expected := "pay"
-	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
-		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
-	}
-}
