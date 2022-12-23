@@ -81,13 +81,13 @@ const PlayerImage = ({ url }) => {
 
 const Player = () => {
   const { data, error } = useSWR('/api/spins', fetcher)
-  const url = process.env.NODE_ENV === "production" ? "https://api-spinning.herokuapp.com/" : "http://s7.viastreaming.net:8310/;?=0.494499115526442"
+  const path = "/api/stream"
   const [audio, setAudio] = useState({})
   const sliderRef = useRef()
   const [analyser, setAnalyser] = useState([])
   const initAudio = () => {
     if (typeof audio?.play === "function") return
-    const newAudio = new Audio(url)
+    const newAudio = new Audio(path)
     newAudio.crossOrigin = "anonymous"
     setAudio(newAudio)
   }
