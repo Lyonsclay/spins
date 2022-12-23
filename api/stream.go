@@ -30,7 +30,7 @@ func logRequestPayload(proxyURL string) {
 
 // Given a request send it to the appropriate url
 func StreamHandler(res http.ResponseWriter, req *http.Request) {
-	url := "http://s7.viastreaming.net:8310/;"
+	url := "http://s7.viastreaming.net:8310/;?_=0.6459343524616199"
 
 	logRequestPayload(url)
 
