@@ -1,6 +1,7 @@
 package spins
 
 import (
+	"log"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
@@ -20,11 +21,18 @@ func serveReverseProxy(target string, res http.ResponseWriter, req *http.Request
 	proxy.ServeHTTP(res, req)
 }
 
+// Log the typeform payload and redirect url
+func logRequestPayload(proxyURL string) {
+	log.Printf("proxy_url: %s\n", proxyURL)
+}
+
+
 
 // Given a request send it to the appropriate url
 func StreamHandler(res http.ResponseWriter, req *http.Request) {
 	url := "http://s7.viastreaming.net:8310/;"
 
+	logRequestPayload(url)
 
 	serveReverseProxy(url, res, req)
 }
