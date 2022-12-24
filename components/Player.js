@@ -81,7 +81,7 @@ const PlayerImage = ({ url }) => {
 
 const Player = () => {
   const { data, error } = useSWR('/api/spins', fetcher)
-  const path = "/api/stream"
+  const path = "/api/radio"
   const [audio, setAudio] = useState({})
   const sliderRef = useRef()
   const [analyser, setAnalyser] = useState([])
