@@ -31,7 +31,7 @@ module.exports = {
     return [
       {
         source: "/api/radio",
-        destination: "http:s7.viastreaming.net:8310/;?=0.494499115526442",
+        destination: "http://s7.viastreaming.net:8310/;?=0.494499115526442",
       }
     ]
   }
