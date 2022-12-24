@@ -116,3 +116,12 @@ func TestTimeFormat(t *testing.T) {
 	}
 }
 
+func TestGetTimeRange(t *testing.T) {
+
+	time := getTimeRange()
+	output := time
+	expected := ""
+	if fmt.Sprintf("%v", output) != fmt.Sprintf("%v", expected) {
+		t.Errorf("Expected: %v \n Received: %v \n", expected, output)
+	}
+}

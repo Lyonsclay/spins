@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"time"
 	"os"
+	"sort"
 )
 
 type Slot struct {
@@ -27,13 +28,10 @@ func getTimeRange() string {
 	return query
 }
 
-func reverseSlice(s []Slot) []Slot {
-	l := len(s)
-	rev := make([]Slot,l)
-	for i,v := range(s) {
-		rev[l - i - 1] = v
-	}
-	return rev[4:]
+func timeSort(s []Slot) {
+	sort.Slice(s, func(i, j int) bool {
+		return s[i].Start > s[j].Start
+	})
 }
 
 func GetCalendar() string {
@@ -54,7 +52,7 @@ func GetCalendar() string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	shows = reverseSlice(shows)
+	timeSort(shows)
 	blob, err := json.MarshalIndent(shows, "", "\t")
 	if err != nil {
 		log.Fatalf("Error marshaling json: %v \n", err)
