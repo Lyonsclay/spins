@@ -1,5 +1,5 @@
 {
-  "name": "artxfm",
+  "name": "spins",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,19 +10,19 @@
     "clean": "rm -rf .vercel/cache .next/cache"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.5",
-    "http-proxy-middleware": "^2.0.4",
+    "@heroicons/react": "^1.0.6",
+    "http-proxy-middleware": "^2.0.6",
     "next": "12.1.0",
-    "next-http-proxy-middleware": "^1.2.4",
+    "next-http-proxy-middleware": "^1.2.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "swr": "^1.2.2",
-    "vercel": "^19.1.2"
+    "swr": "^1.3.0",
+    "vercel": "^19.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.6",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
     "prettier": "^2.8.1",
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.2.4"
   }
 }
