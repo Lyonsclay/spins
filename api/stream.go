@@ -30,8 +30,8 @@ func logRequestPayload(proxyURL string) {
 
 // Given a request send it to the appropriate url
 func StreamHandler(res http.ResponseWriter, req *http.Request) {
-	url := "http://s7.viastreaming.net:8310/;"
-	// url := "https://twitter.com/home;"
+	// url := "http://s7.viastreaming.net:8310/";
+    url := "https://patmos.cdnstream.com/proxy/artfmin1/?mp=/stream";
 
 	// logRequestPayload(url)
 
