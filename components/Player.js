@@ -4,7 +4,7 @@ import React, {
   useRef
 } from 'react'
 import dynamic from 'next/dynamic'
-import Oscilliscope from './Oscilliscope'
+import Oscilliscope from './Oscilloscope'
 
 
 import { HeartIcon, PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
