@@ -1,37 +1,22 @@
+'use client'
+
 import React, {
   useEffect,
   useState,
   useRef
 } from 'react'
-import dynamic from 'next/dynamic'
 import Oscilliscope from './Oscilloscope'
 
-
-import { HeartIcon, PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
+import { PlayIcon, PauseIcon, MusicNoteIcon } from '@heroicons/react/solid'
 import { HeartIcon as ArtIcon }  from '@heroicons/react/outline'
 import useSWR from 'swr'
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
-const Heart = () => (
-  <div className="text-red-lighter">
-    <svg className="w-6 h-6"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20">
-      <path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" />
-    </svg>
-  </div>
-)
-const Play = () => (
-  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <path d="M4,0 L20,10 L4,20 L4,0" />
-  </svg>
-)
-const Pause = () => (
-  <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-    <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
-  </svg>
-)
+const fetcher = async (...args) => {
+  const res = await fetch(...args)
+  const text = await res.text()
+  if (!res.ok) throw new Error(text || `Request failed: ${res.status}`)
+  return text ? JSON.parse(text) : {}
+}
 
 const PlayPause = ({ audio, init }) => {
   const [play, setPlay] = useState("music-note")
@@ -80,10 +65,9 @@ const PlayerImage = ({ url }) => {
 }
 
 const Player = () => {
-  const { data, error } = useSWR('/api/spins', fetcher)
+  const { data } = useSWR('/api/spins', fetcher)
   const path = "/api/radio"
   const [audio, setAudio] = useState({})
-  const sliderRef = useRef()
   const [analyser, setAnalyser] = useState([])
   const initAudio = () => {
     if (typeof audio?.play === "function") return

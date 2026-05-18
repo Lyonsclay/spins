@@ -1,19 +1,16 @@
-import React, { useEffect, useState } from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import useSWR from 'swr'
 import Show from './Show'
 
 import { ClockIcon } from '@heroicons/react/solid'
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
-const Heart = () => (
-  <div className="text-red-lighter">
-    <svg className="w-6 h-6"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20">
-      <path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" />
-    </svg>
-  </div>
-)
+const fetcher = async (...args) => {
+  const res = await fetch(...args)
+  const text = await res.text()
+  if (!res.ok) throw new Error(text || `Request failed: ${res.status}`)
+  return text ? JSON.parse(text) : []
+}
 
 const dateFormat = (time) => {
   let date = new Date(time)
@@ -23,15 +20,6 @@ const dateFormat = (time) => {
   }
   time = date.toLocaleTimeString("en-us", options)
   time = time.split(',').slice(0, -2).join(" ")
-  return time
-}
-const startTimeFormat = (time) => {
-  let date = new Date(time)
-  let options = {
-    weekday: "long", month: "short",
-    day: "numeric", hour: "2-digit", minute: "2-digit"
-  }
-  time = date.toLocaleTimeString("en-us", options)
   return time
 }
 const timeFormat = (time) => {
