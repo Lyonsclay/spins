@@ -1,4 +1,4 @@
-package spins
+package handler
 
 import (
 	"encoding/json"
